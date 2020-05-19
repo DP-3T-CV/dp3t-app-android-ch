@@ -11,10 +11,10 @@
 <resources>
 
 	<!-- App Name -->
-	<string name="app_name">"Swiss PT"</string>
+	<string name="app_name">DjuntaMon</string>
 
 	<!-- App Name (unter Icon auf iOS) -->
-	<string name="CFBundleDisplayName">"Swiss PT"</string>
+	<string name="CFBundleDisplayName">DjuntaMon</string>
 
 	<!-- Loading View: Erneut laden -->
 	<string name="loading_view_reload">"Erneut laden"</string>
@@ -272,7 +272,7 @@ Damit helfen Sie mit, die Verbreitung des neuen Coronavirus einzudämmen."</stri
 	<string name="bluetooth_permission_error_text">"Erlauben Sie die Verwendung von Bluetooth, damit das anonyme Tracing funktioniert."</string>
 
 	<!-- URL zum Corona Check -->
-	<string name="symptom_detail_corona_check_url">"https://check.bag-coronavirus.ch/screening"</string>
+	<string name="symptom_detail_corona_check_url">"https://covid19.cv/"</string>
 	<string name="push_open_settings_button">"Einstellungen ändern"</string>
 
 	<!-- Meldungen Detail: Subtitel wenn keine Meldungen -->
@@ -734,7 +734,7 @@ Erst wenn der Verdacht auf eine mögliche Ansteckung genug gross ist werden sie 
 	<string name="meldungen_explanation_link_title">"Anweisung zur Selbstquarantäne"</string>
 
 	<!-- Meldungen: Meldung Weisse Box Link URL -->
-	<string name="meldungen_explanation_link_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/selbst-isolierung-und-selbst-quarantaene.html"</string>
+	<string name="meldungen_explanation_link_url">"https://covid19.cv/"</string>
 
 	<!-- Meldungen: Meldungen FAQ -->
 	<string name="meldungen_meldungen_faq1_title">"Muss ich anrufen?"</string>
@@ -766,7 +766,7 @@ Sie bleiben dabei anonym. Es werden keine Personendaten erfasst."</string>
 	<string name="no_meldungen_box_link">"So schützen wir uns"</string>
 
 	<!-- Keine Meldungen Weisse Box Link URL -->
-	<string name="no_meldungen_box_url">"https://www.bag-coronavirus.ch"</string>
+	<string name="no_meldungen_box_url">"https://covid19.cv/"</string>
 
 	<!-- Informieren Detail: FAQ Titel -->
 	<string name="inform_detail_faq1_title">"Was ist ein Covidcode?"</string>
@@ -794,7 +794,7 @@ Damit können andere Swiss PT App Nutzer prüfen, ob Sie in den letzten Tagen ei
 	<string name="infoline_tel_number">"+41 58 387 77 78"</string>
 
 	<!-- URL für Häufige Fragen Button -->
-	<string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
+	<string name="faq_button_url">"https://covid19.cv/#faqs"</string>
 
 	<!-- Informieren Flow: Titel erster Screen -->
 	<string name="inform_code_intro_title">"Wichtiger Hinweis"</string>

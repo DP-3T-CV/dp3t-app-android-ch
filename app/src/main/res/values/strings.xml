@@ -11,10 +11,10 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">"Swiss PT"</string>
+    <string name="app_name">"DjuntaMon"</string>
 
     <!-- App Name (unter Icon auf iOS) -->
-    <string name="CFBundleDisplayName">"Swiss PT"</string>
+    <string name="CFBundleDisplayName">"DjuntaMon"</string>
 
     <!-- Loading View: Erneut laden -->
     <string name="loading_view_reload">"Reload"</string>
@@ -272,7 +272,7 @@ Thank you for helping to contain the spread of the coronavirus."</string>
     <string name="bluetooth_permission_error_text">"Enable the use of Bluetooth so that anonymous tracing works."</string>
 
     <!-- URL zum Corona Check -->
-    <string name="symptom_detail_corona_check_url">"https://check.bag-coronavirus.ch/screening"</string>
+    <string name="symptom_detail_corona_check_url">"https://covid19.cv/"</string>
     <string name="push_open_settings_button">"Change settings"</string>
 
     <!-- Meldungen Detail: Subtitel wenn keine Meldungen -->
@@ -712,7 +712,7 @@ Infoline Coronavirus
     <string name="meldungen_explanation_link_title">"Instructions on self-quarantine"</string>
 
     <!-- Meldungen: Meldung Weisse Box Link URL -->
-    <string name="meldungen_explanation_link_url">"https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/selbst-isolierung-und-selbst-quarantaene.html"</string>
+    <string name="meldungen_explanation_link_url">"https://covid19.cv/"</string>
 
     <!-- Meldungen: Meldungen FAQ -->
     <string name="meldungen_meldungen_faq1_title">"Do I have to call?"</string>
@@ -742,7 +742,7 @@ Infoline Coronavirus
     <string name="no_meldungen_box_link">"This way, we protect ourselves"</string>
 
     <!-- Keine Meldungen Weisse Box Link URL -->
-    <string name="no_meldungen_box_url">"https://www.bag-coronavirus.ch"</string>
+    <string name="no_meldungen_box_url">"https://covid19.cv/"</string>
 
     <!-- Informieren Detail: FAQ Titel -->
     <string name="inform_detail_faq1_title">"What is a Covidcode?"</string>
@@ -766,7 +766,7 @@ Infoline Coronavirus
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
+    <string name="faq_button_url">"https://covid19.cv/#faqs"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Important information"</string>

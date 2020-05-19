@@ -17,15 +17,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+
 import androidx.core.app.NotificationCompat;
 
-import java.security.PublicKey;
-
-import ch.admin.bag.dp3t.networking.CertificatePinning;
-import ch.admin.bag.dp3t.networking.ConfigRepository;
-import ch.admin.bag.dp3t.networking.FakeWorker;
-import ch.admin.bag.dp3t.storage.SecureStorage;
-import ch.admin.bag.dp3t.util.NotificationUtil;
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.InfectionStatus;
 import org.dpppt.android.sdk.TracingStatus;
@@ -36,6 +30,14 @@ import org.dpppt.android.sdk.internal.logger.LogLevel;
 import org.dpppt.android.sdk.internal.logger.Logger;
 import org.dpppt.android.sdk.internal.util.ProcessUtil;
 import org.dpppt.android.sdk.util.SignatureUtil;
+
+import java.security.PublicKey;
+
+import ch.admin.bag.dp3t.networking.CertificatePinning;
+import ch.admin.bag.dp3t.networking.ConfigRepository;
+import ch.admin.bag.dp3t.networking.FakeWorker;
+import ch.admin.bag.dp3t.storage.SecureStorage;
+import ch.admin.bag.dp3t.util.NotificationUtil;
 
 public class MainApplication extends Application {
 

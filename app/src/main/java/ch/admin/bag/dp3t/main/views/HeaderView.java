@@ -23,19 +23,21 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
+
 import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 
+import org.dpppt.android.sdk.TracingStatus;
+
 import java.util.Random;
 
-import ch.admin.bag.dp3t.main.model.TracingState;
-import ch.admin.bag.dp3t.main.model.TracingStatusInterface;
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.main.model.NotificationState;
+import ch.admin.bag.dp3t.main.model.TracingState;
+import ch.admin.bag.dp3t.main.model.TracingStatusInterface;
 import ch.admin.bag.dp3t.util.TracingErrorStateHelper;
-import org.dpppt.android.sdk.TracingStatus;
 
 public class HeaderView extends ConstraintLayout {
 
@@ -46,16 +48,9 @@ public class HeaderView extends ConstraintLayout {
 	static final long INITIAL_DELAY = 500;
 
 	private static final int[] BACKGROUND_IMAGES =
-			new int[] { R.drawable.header_basel,
-					R.drawable.header_bern,
-					R.drawable.header_chur,
-					R.drawable.header_geneva,
-					R.drawable.header_lausanne,
-					R.drawable.header_locarno,
-					R.drawable.header_lugano,
-					R.drawable.header_luzern,
-					R.drawable.header_stgallen,
-					R.drawable.header_zurich };
+			new int[] { R.drawable.header_st,
+					R.drawable.header_sa,
+					R.drawable.header_sv };
 	private static Integer backgroundImageIndex = null;
 
 	private ImageView backgroundImage;

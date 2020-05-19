@@ -24,6 +24,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -37,13 +38,11 @@ import ch.admin.bag.dp3t.BuildConfig;
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.contacts.ContactsFragment;
 import ch.admin.bag.dp3t.debug.DebugFragment;
-import ch.admin.bag.dp3t.html.HtmlFragment;
 import ch.admin.bag.dp3t.main.model.NotificationState;
 import ch.admin.bag.dp3t.main.model.NotificationStateError;
 import ch.admin.bag.dp3t.main.views.HeaderView;
 import ch.admin.bag.dp3t.reports.ReportsFragment;
 import ch.admin.bag.dp3t.storage.SecureStorage;
-import ch.admin.bag.dp3t.util.AssetUtil;
 import ch.admin.bag.dp3t.util.NotificationStateHelper;
 import ch.admin.bag.dp3t.util.NotificationUtil;
 import ch.admin.bag.dp3t.util.NotificatonErrorStateHelper;
@@ -106,14 +105,15 @@ public class HomeFragment extends Fragment {
 		toolbar.inflateMenu(R.menu.homescreen_menu);
 		toolbar.setOnMenuItemClickListener(item -> {
 			if (item.getItemId() == R.id.homescreen_menu_impressum) {
-				HtmlFragment htmlFragment =
+				//TODO REVER E COLOCAR O CONTEUDO DE CABO VERDE
+				/*HtmlFragment htmlFragment =
 						HtmlFragment.newInstance(R.string.menu_impressum, AssetUtil.getImpressumBaseUrl(getContext()),
 								AssetUtil.getImpressumHtml(getContext()));
 				getParentFragmentManager().beginTransaction()
 						.setCustomAnimations(R.anim.slide_enter, R.anim.slide_exit, R.anim.slide_pop_enter, R.anim.slide_pop_exit)
 						.replace(R.id.main_fragment_container, htmlFragment)
 						.addToBackStack(HtmlFragment.class.getCanonicalName())
-						.commit();
+						.commit();*/
 				return true;
 			}
 			return false;

@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Ubique Innovation AG <https://www.ubique.ch>
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+  ~
+  ~ SPDX-License-Identifier: MPL-2.0
+  -->
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">"DjuntaMon"</string>
+
+    <!-- App Name (unter Icon auf iOS) -->
+    <string name="CFBundleDisplayName">"DjuntaMon"</string>
+
+    <!-- Loading View: Erneut laden -->
+    <string name="loading_view_reload">"Recarregar"</string>
+
+    <!-- Fehler Titel in Loading View -->
+    <string name="loading_view_error_title">"Erro"</string>
+
+    <!-- Alert: Titel wenn die App muss geupdatet werden -->
+    <string name="force_update_title">"Necessita atualização"</string>
+
+    <!-- Informieren: Weiter Button -->
+    <string name="inform_continue_button">"Continuar"</string>
+
+    <!-- Informieren: Senden Button -->
+    <string name="inform_send_button_title">"Reportar anonimamente"</string>
+
+    <!-- Informieren: Danke -->
+    <string name="inform_send_thankyou">"Obrigado"</string>
+
+    <!-- Informieren: Danke Text -->
+    <string name="inform_send_thankyou_text">"Acabou de reportar o seu caso positivo de forma anónima via DjuntaMon.
+Obrigado por ajudar a conter o coronavirus"</string>
+
+    <!-- Informieren: Button Titel -->
+    <string name="inform_fertig_button_title">"Fechar"</string>
+
+    <!-- Titel auf Homescreen für Begegnungen -->
+    <string name="handshakes_title_homescreen">"Encontros"</string>
+
+    <!-- Titel der About Seite -->
+    <string name="tab_theapp_title">"A App"</string>
+
+    <!-- Abbrechen -->
+    <string name="cancel">"Cancelar"</string>
+
+    <!-- Titel für Push-Nachrichten, wenn erkannt wird, dass ein Nutzer exposed war -->
+    <string name="push_exposed_title">"Nova Mensagem"</string>
+
+    <!-- Titel für Push-Nachrichten, wenn erkannt wird, dass ein Nutzer exposed war -->
+    <string name="push_exposed_text">"Abra a APP para ler a mensagem"</string>
+
+    <!-- Titel für Button um Ortung zu erlauben -->
+    <string name="android_button_permission_location">"Autorizar a localização"</string>
+
+    <!-- Okay Button Titel -->
+    <string name="android_button_ok">"OK"</string>
+
+    <!-- Onboarding: Weiter Button Titel -->
+    <string name="onboarding_continue_button">"Continuar"</string>
+
+    <!-- Onboarding: Fertig Button -->
+    <string name="onboarding_finish_button">"Terminar"</string>
+
+    <!-- Unerwarteter Fehler -->
+    <string name="unexpected_error_title">"Ocorreu um erro inesperado"</string>
+
+    <!-- Bluetooth Fehlermeldung -->
+    <string name="bluetooth_turned_off">"DjuntaMon não está a funcionar porque o Bluetooth está desligado"</string>
+
+    <!-- Bluetooth Permission Fehler -->
+    <string name="bluetooth_permission_turned_off">"DjuntaMon não está a funcionar porque o Bluetooth não é permitido“</string>
+
+    <!-- Permission Text für Bluetooth -->
+    <string name="NSBluetoothPeripheralUsageDescription">"Os encontros serão reconhecidos automaticamente através da tecnologia low energy Bluetooth."</string>
+
+    <!-- Permission Text für Bluetooth -->
+    <string name="NSBluetoothAlwaysUsageDescription">"Os encontros serão reconhecidos automaticamente através da tecnologia low energy Bluetooth."</string>
+
+    <!-- Text der bei Android in der permanenten Notification immer angezeigt wird -->
+    <string name="android_foreground_service_notification_text">"Os Encontros serão registados de forma anónima no seu dispositivo."</string>
+
+    <!-- Inform: Titel der Code abschicken Seite -->
+    <string name="inform_code_title">"Introduzir o código COVID"</string>
+
+    <!-- Inform: Code eingeben Subtext -->
+    <string name="inform_code_text">"Introduza o código COVID que lhe foi enviado."</string>
+
+    <!-- Inform: Code eingeben kein Code Button Text -->
+    <string name="inform_code_no_code">"Necessita de ajuda?"</string>
+
+    <!-- Titel des Bluetooth Control -->
+    <string name="tracing_setting_title">"Rastremento"</string>
+
+    <!-- Text beim Bluetooth Control -->
+    <string name="tracing_setting_text">"Permitir rastreamento anónimo"</string>
+
+    <!-- Bluetooth Control: Tracking deaktiviert -->
+    <string name="bluetooth_setting_tracking_inactive">"Rastreamento desativado"</string>
+
+    <!-- Bluetooth Setting Text unten -->
+    <string name="bluetooth_setting_data_explanation_title">"Os meus dados estão seguros?"</string>
+
+    <!-- Bluetooth Setting: Text unten -->
+    <string name="bluetooth_setting_tracking_explanation_text2">"O registo de um encontro com outra pessoa só é registado no seu Telemóvel."</string>
+
+    <!-- Titel auf Homescreen -->
+    <string name="reports_title_homescreen">"Relatórios"</string>
+
+    <!-- Keine Meldungen Titel -->
+    <string name="meldungen_no_meldungen_title">"Sem relatórios"</string>
+
+    <!-- Push deaktiviert Titel -->
+    <string name="push_deactivated_title">"Mensagens desativadas"</string>
+
+    <!-- Push deaktiviert Text -->
+    <string name="push_deactivated_text">"Altere as configurações para receber relatórios automaticamente."</string>
+
+    <!-- Titel im Meldung Detail -->
+    <string name="meldungen_meldung_title">"Possível infecção“</string>
+
+    <!-- Text im Meldung Detail -->
+    <string name="meldungen_meldung_text">"Suspeita-se que possa ter sido infetado."</string>
+
+    <!-- Titel ob Tracing aktiv -->
+    <string name="tracing_active_title">"Rastreamento ativo"</string>
+
+    <!-- Text bei Tracing aktiv -->
+    <string name="tracing_active_text">"Os encontros serão registados sob anonimato."</string>
+
+    <!-- Android: Fehler Text bei Tracing -->
+    <string name="android_tracing_error_title">"Rastreamento não está ativo"</string>
+
+    <!-- Fehlertitel mit Foreground Service Notification -->
+    <string name="android_foreground_service_notification_errors">"DjuntaMon neste momento não consegue funcionar adequadamente"</string>
+
+    <!-- Fehler Beschreibung -->
+    <string name="android_foreground_service_notification_error_network_sync">"Ocorreu um erro ao tentar carregar dados"</string>
+
+    <!-- Fehler Beschreibung -->
+    <string name="android_foreground_service_notification_error_location_permission">"Para que DjuntaMon possa usar Bluetooth, deve ativar a sua localização. DjuntaMon não utiliza a sua localização em momento algum."</string>
+
+    <!-- Fehler Beschreibung Akku -->
+    <string name="android_foreground_service_notification_error_battery_optimization">"Para que o rastremento funcione com precisão, DjuntaMon tem que funcionar em Background. Esta funcionalidade causa um ligeiro aumento de consumo da sua bateria."</string>
+
+    <!-- Titel der Nachricht, die auf Beta-Status hinweist -->
+    <string name="preview_warning_title">"Versão de simulação“</string>
+
+    <!-- Text der Nachricht, die auf Beta-Status hinweist -->
+    <string name="preview_warning_text">"DjuntaMon disponibiliza uma versão para simular o comportamento. Esta versão não está em produção"</string>
+
+    <!-- Debug: Label auf dem Button, der zum Debug-Screen führt -->
+    <string name="debug_settings_title">"Debug - Configurações“</string>
+
+    <!-- Debug: Titel für die Debug-Einstellungen zur Status-Überschreibung -->
+    <string name="debug_state_setting_title">"Substituir o Estado de DjuntaMon"</string>
+
+    <!-- Debug: Erklärungstext für die Debug-Einstellungen zur Status-Überschreibung -->
+    <string name="debug_state_setting_text">"Esta configuração substitui o Estado Visual de DjuntaMon. A funcionalidade de rastreio não é afectada."</string>
+
+    <!-- Debug: Einstellungs-Option zum überschreiben des App-Zustands: Keine -->
+    <string name="debug_state_setting_option_none">"Não substituir"</string>
+
+    <!-- Debug: Einstellungs-Option zum überschreiben des App-Zustands: Gesund -->
+    <string name="debug_state_setting_option_ok">"Saudável"</string>
+
+    <!-- Debug: Einstellungs-Option zum überschreiben des App-Zustands: Einem positiven Kontakt ausgesetzt -->
+    <string name="debug_state_setting_option_exposed">"Contacto testou positivo"</string>
+
+    <!-- Debug: Einstellungs-Option zum überschreiben des App-Zustands: Selbst positiv getestet -->
+    <string name="debug_state_setting_option_infected">"Reportar como Positivo"</string>
+
+    <!-- Debug: Titel für die Debug-Info zum Tracing-Status -->
+    <string name="debug_sdk_state_title">"Estado SDK"</string>
+
+    <!-- Debug: Erklärungstext für die Debug-Info zum Tracing-Status -->
+    <string name="debug_sdk_state_text">"Estado atual do SDK de DP-3T"</string>
+
+    <!-- Debug: Bezeichnung für den letzen sync-Zeitpunkt -->
+    <string name="debug_sdk_state_last_synced">"Último Sincronismo"</string>
+
+    <!-- Debug: Bezeichnung für den Fall, bei dem der User selber als positiv getestet gemeldet wurde -->
+    <string name="debug_sdk_state_self_exposed">"Reportado"</string>
+
+    <!-- Debug: Bezeichnung für den Fall, bei dem ein Kontakt als positiv getestet gemeldet wurde -->
+    <string name="debug_sdk_state_contact_exposed">"Contacto foi reportado"</string>
+
+    <!-- Debug: Bezeichnung für die Anzahl bluetooth-handshakes, die ausgeführt wurden -->
+    <string name="debug_sdk_state_number_handshakes">"Numero de apertos de mão"</string>
+
+    <!-- Debug-Status-Bezeichnung für boleschen Wert 'true' -->
+    <string name="debug_sdk_state_boolean_true">"Sim"</string>
+
+    <!-- Debug-Status-Bezeichnung für boleschen Wert 'false' -->
+    <string name="debug_sdk_state_boolean_false">"Não"</string>
+
+    <!-- Debug: Button-Text für das Zurücksetzen des lokalen SDK Zustandes -->
+    <string name="debug_sdk_button_reset">"Reiniciar SDK"</string>
+
+    <!-- Infotext, wenn lokal das SDK zurückgesetzt wurde -->
+    <string name="android_debug_sdk_reset_text">"O estado do SDK local foi Reiniciado."</string>
+
+    <!-- Tab-Titel -->
+    <string name="tab_tracing_title">"Rastreamento"</string>
+
+    <!-- Titel auf Homescreen für Was tun Section -->
+    <string name="whattodo_title_symptoms">"Sentir Sintomas"</string>
+
+    <!-- Subtitel auf Homescreen für Was Tun Section -->
+    <string name="whattodo_subtitle_symptoms">"O que fazer se …"</string>
+
+    <!-- Titel auf Homescreen bei Was tun Section -->
+    <string name="whattodo_title_positivetest">"você testar positivo“</string>
+
+    <!-- Subtitel auf Homescreen bei Was tun Section -->
+    <string name="whattodo_subtitle_positivetest">"O que fazer se …"</string>
+
+    <!-- Informieren Detail: Subtitel -->
+    <string name="inform_detail_subtitle">"O que fazer se …"</string>
+
+    <!-- Informieren Detail: Titel -->
+    <string name="inform_detail_title">"você testou positivo"</string>
+
+    <!-- Inform Detail: Weisse Box Subtitel -->
+    <string name="inform_detail_box_subtitle">"Com o código COVID“</string>
+
+    <!-- Inform Detai Weisse Box Titel -->
+    <string name="inform_detail_box_title">"Envie um relatório anónimo“</string>
+
+    <!-- Inform Detail Weisse Box Button -->
+    <string name="inform_detail_box_button">"Introduza o código COVID"</string>
+
+    <!-- Informieren Detail Weisse Box Text -->
+    <string name="inform_detail_box_text">"Use o código COVID enviado para si para reportar o teste de forma anónima no DjuntaMon"</string>
+
+    <!-- Symptome Detail Subtitel -->
+    <string name="symptom_detail_subtitle">"O que fazer se …"</string>
+
+    <!-- Symptom Detail Titel -->
+    <string name="symptom_detail_title">"Eu sinto-me doente?"</string>
+
+    <!-- Symptom Detail Weisse Box Subtitel -->
+    <string name="symptom_detail_box_subtitle">"Caso tiver sintomas ..."</string>
+
+    <!-- Symptom Detail Weisse Box Titel -->
+    <string name="symptom_detail_box_title">"Contacte o seu Médico “</string>
+
+    <!-- Symptom Detail Weisse Box Button -->
+    <string name="symptom_detail_box_button">"Para validação do coronavirus"</string>
+
+    <!-- Symptom Detail Weisse Box Text -->
+    <string name="symptom_detail_box_text">"Se está com possíveis sintomas de coronavirus, contacte o seu médico ou o serviço de emergência médica."</string>
+
+    <!-- Informieren Titel in NavigationBar/Toolbar -->
+    <string name="inform_detail_navigation_title">"Testado positivo"</string>
+
+    <!-- Symptome Detail: NavigationBar/Toolbar Titel -->
+    <string name="symptom_detail_navigation_title">"Sintomas"</string>
+    <string name="tracing_turned_off_title">"Rastreamento desativado"</string>
+    <string name="tracing_turned_off_text">"Ative o rastreamento para que DjuntaMon possa funcionar."</string>
+    <string name="bluetooth_turned_off_title">"Bluetooth desligado"</string>
+    <string name="bluetooth_turned_off_text">"Ligue Bluetooth no seu dispositivo para que o rastreamento anónimo possa funcionar."</string>
+    <string name="bluetooth_turn_on_button_title">"Ligue o Bluetooth"</string>
+    <string name="bluetooth_permission_error_title">"Utilização de Bluetooth rejeitada"</string>
+    <string name="bluetooth_permission_error_text">"Ative a utilização de Bluetooth para que o rastreamento anónimo funcione."</string>
+
+    <!-- URL zum Corona Check -->
+    <string name="symptom_detail_corona_check_url">"https://covid19.cv/"</string>
+    <string name="push_open_settings_button">"Alterar configurações"</string>
+
+    <!-- Meldungen Detail: Subtitel wenn keine Meldungen -->
+    <string name="meldungen_no_meldungen_subtitle">"Nenhuma potencial infecção foi detectada“</string>
+
+    <!-- Keine Meldungen Weisse Box Titel -->
+    <string name="no_meldungen_box_title">"Proteja-se"</string>
+
+    <!-- Keine Meldungen Weisse Box Subtitel -->
+    <string name="no_meldungen_box_subtitle">"O que devo fazer?"</string>
+
+    <!-- Keine Meldungen Weisse Box Text -->
+    <string name="no_meldungen_box_text">"Siga as instruções das Autoridades em relação ao distanciamento social."</string>
+
+    <!-- Meldung Detail: Positiv Getestet Titel -->
+    <string name="meldung_detail_positive_tested_title">"Testado positivo"</string>
+
+    <!-- Meldung Detail: Positiv Getestet Subtitel -->
+    <string name="meldung_detail_positive_tested_subtitle">"Você foi testado positivo para o novo coronavirus."</string>
+
+    <!-- Meldung Detail Positiv Getestet Weisse Box Subtitel -->
+    <string name="meldung_detail_positive_test_box_subtitle">"O que devo fazer?"</string>
+
+    <!-- Meldung Detail Positiv Getestet Weisse Box Titel -->
+    <string name="meldung_detail_positive_test_box_title">"Auto-isolamento"</string>
+
+    <!-- Meldung Detail Positiv Getestet Weisse Box Text -->
+    <string name="meldung_detail_positive_test_box_text">"Siga as instruções de auto-isolamento."</string>
+    <string name="tracing_ended_title">"Rastreamento terminado"</string>
+    <string name="tracing_ended_text">"Não foram registados mais encontros"</string>
+    <string name="exposed_info_contact_hotline">"Cantactar o“</string>
+    <string name="meldung_homescreen_positive_info_line1">"Siga o"</string>
+    <string name="meldung_homescreen_positive_info_line2">"Instruções de auto-isolamento"</string>
+
+    <!-- Meldung Detail Exposed Neue Meldung -->
+    <string name="meldung_detail_exposed_new_meldung">"Novo relatório"</string>
+
+    <!-- Meldung Detail Exposed Titel -->
+    <string name="meldung_detail_exposed_title">"Potencial Infecção"</string>
+    <string name="meldung_homescreen_positiv_title">"Testado positivo"</string>
+
+    <!-- Meldung Detail Exposed Subtitel -->
+    <string name="meldung_detail_exposed_subtitle">"Suspeita de potencial infecção"</string>
+    <string name="meldung_homescreen_positiv_text">"Você foi testado positivo da infecção do coronavirus."</string>
+
+    <!-- Debug Screen: Onboarding Reset Button -->
+    <string name="reset_onboarding">"Reiniciar onboarding"</string>
+
+    <!-- Heute -->
+    <string name="date_today">"Today"</string>
+
+    <!-- Meldung Detail: Vor wievielen Tagen {COUNT} wird durch Zahl ersetzt -->
+    <string name="date_days_ago">"{COUNT} dias atrás“</string>
+
+    <!-- Meldungen Detail: Subtitel Weisse Box -->
+    <string name="meldungen_detail_whattodo">"O que devo fazer?"</string>
+
+    <!-- Meldungen Detail: Weisse Box Titel -->
+    <string name="meldungen_detail_call">"Contacte-nos"</string>
+
+    <!-- Meldungen Detail Text Weisse Box -->
+    <string name="meldungen_detail_call_text">"Linha de emergência coronavirus"</string>
+
+    <!-- Meldungen Detail Weisse Box Button -->
+    <string name="meldungen_detail_call_button">"Ligue agora“</string>
+
+    <!-- Meldungen Detail Weisse Box Titel der Erklärungen -->
+    <string name="meldungen_detail_explanation_title">"Tenha cuidado!"</string>
+
+    <!-- Meldungen Detail Weisse Box Erklärungstext 1 -->
+    <string name="meldungen_detail_explanation_text1">"Poderá infectar outros sem saber."</string>
+
+    <!-- Meldungen Detail: Weisse Box Erklärtext 2 -->
+    <string name="meldungen_detail_explanation_text2">"Por favor proteja a sua familia, seus amigos e os que o rodeiam. Evite contactos até 10 dias após uma possível infecção.."</string>
+
+    <!-- Meldungen Detail Weisse Box Titel -->
+    <string name="meldungen_detail_guard_others">"Proteja as outras pessoas"</string>
+
+    <!-- Meldungen Detail: Weisse Box Text -->
+    <string name="meldungen_detail_guard_text">"Se tem alguma pergunta:
+Linha apoia ao Coronavirus
+800 11 12"</string>
+
+    <!-- Meldungen Detail Button Weisse Box -->
+    <string name="meldungen_detail_call_again_button">"Volte a chamar"</string>
+
+    <!-- Meldungen Detail: Weisse Box Anruf Zeitpunkt -->
+    <string name="meldungen_detail_call_last_call">"Última chamada: (DATE)"</string>
+
+    <!-- Subtitel im Onboarding erste Seite -->
+    <string name="app_subtitle">"Subtítulo"</string>
+
+    <!-- Onboarding: Titel oben -->
+    <string name="onboarding_prinzip_heading">"O Objetivo“</string>
+
+    <!-- Onboarding: Titel -->
+    <string name="onboarding_prinzip_title">"Mantermo-nos um passo à frente do virus"</string>
+
+    <!-- Onboarding Prinzip Text -->
+    <string name="onboarding_prinzip_text1">"Através do aplicativo DjuntaMon, podemos ajudar a conter a propagação do novo coronavirus."</string>
+
+    <!-- Onboarding Prinzip Text -->
+    <string name="onboarding_prinzip_text2">"O Aplicativo disponibiliza informação sobre casos suspeitos. Desta forma podemos quebrar o ritmo de propagação."</string>
+
+    <!-- Onboarding Privacy: Titel oben -->
+    <string name="onboarding_privacy_heading">"Privacidade como obsessão“</string>
+
+    <!-- Onboarding Privacy: Titel -->
+    <string name="onboarding_privacy_title">"Garantida a protecção da sua privacidade"</string>
+
+    <!-- Onboarding Privacy: Text -->
+    <string name="onboarding_privacy_text1">"Os Telemóveis comunicam de forma anónima."</string>
+
+    <!-- Onboarding Privacy: Text -->
+    <string name="onboarding_privacy_text2">"Todos os dados são encriptados e guardados no seu Telemóvel."</string>
+
+    <!-- Onboarding Begegnungen: Titel oben -->
+    <string name="onboarding_begegnungen_heading">"O que faz o aplicativo?"</string>
+
+    <!-- Onboarding Begegnungen: Titel -->
+    <string name="onboarding_begegnungen_title">"Reconhecendo encontros através do Bluetooth"</string>
+
+    <!-- Onboarding Begegnungen: Text -->
+    <string name="onboarding_begegnungen_text1">"O aplicativo de forma automática reconhece quando dois utilizadores estiveram perto um do outro por um determinado período de tempo."</string>
+
+    <!-- Onboarding Begegnungen: Text -->
+    <string name="onboarding_begegnungen_text2">"Utiliza Bluetooth Low Energy (BLE) para o efeito. Não é utilizado GPS em momento algum."</string>
+
+    <!-- Onboarding Meldung: Text oben -->
+    <string name="onboarding_meldung_heading">"O que faz o aplicativo?"</string>
+
+    <!-- Onboarding Meldung: Titel -->
+    <string name="onboarding_meldung_title">"Reporta potencial infecção"</string>
+
+    <!-- Onboarding Meldung: Text -->
+    <string name="onboarding_meldung_text1">"O aplicativo notifica-o caso se suspeite de uma potencial infecção."</string>
+
+    <!-- Onboarding Meldung: Text -->
+    <string name="onboarding_meldung_text2">"Respondendo apropriadamente, você pode proteger-se a si, sua familia e sua comunidade."</string>
+
+    <!-- Onboarding Bluetooth: Titel -->
+    <string name="onboarding_bluetooth_title">"Ativar Bluetooth"</string>
+
+    <!-- Onboarding Bluetooth: Text -->
+    <string name="onboarding_bluetooth_text">"Para utilizar esta APP deve ativar o Bluetooth."</string>
+
+    <!-- Onboarding Bluetooth: Button -->
+    <string name="onboarding_bluetooth_button">"Ativar Bluetooth"</string>
+
+    <!-- Onboarding: Untetitel unten -->
+    <string name="onboarding_good_to_know">"Bom saber“</string>
+
+    <!-- Onboarding Bluetooth: Titel unten -->
+    <string name="onboarding_bluetooth_gtk_title1">"Você continua anónimo"</string>
+
+    <!-- Onboarding Bluetooth: Text unten -->
+    <string name="onboarding_bluetooth_gtk_text1">"Nenhum dado pessoal está disponível via Bluetooth."</string>
+
+    <!-- Onboarding Bluetooth: Titel unten -->
+    <string name="onboarding_bluetooth_gtk_title2">"Ligeiro aumento da utilização da bateria"</string>
+
+    <!-- Onboarding Bluetooth: Text unten -->
+    <string name="onboarding_bluetooth_gtk_text2">"O Aplicativo utiliza o mínimo de bateria possível. sentirá apenas um ligeiro aumento na utilização da bateria."</string>
+
+    <!-- Onboarding Mitteilungen: Titel -->
+    <string name="onboarding_push_title">"Permitir mensagens"</string>
+
+    <!-- Onboarding Mitteilungen: Text -->
+    <string name="onboarding_push_text">"Para poder receber notificações do Aplicativo, deve permitir mensagens."</string>
+
+    <!-- Onboarding Mitteilungen: Button -->
+    <string name="onboarding_push_button">"Ativar Mensagens“</string>
+
+    <!-- Onboarding Mitteilungen: Titel Unten -->
+    <string name="onboarding_push_gtk_title1">"Notificado de imediato"</string>
+
+    <!-- Onboarding Mitteilungen: Text unten -->
+    <string name="onboarding_push_gtk_text1">No caso de uma potencial infecção receberá uma mensagem no ecrã bloqueado do telemóvel"</string>
+
+    <!-- Code senden: Abschluss Gute Besserung -->
+    <string name="inform_send_getwell_title">"Melhoras rápidas!"</string>
+
+    <!-- Code senden: Abschluss Gute Besserung -->
+    <string name="inform_send_getwell_text">"Melhoras rápidas, siga as instruções de auto-isolamento."</string>
+
+    <!-- Titel auf dem letzen Onboarding Screen -->
+    <string name="onboarding_go_title">"O Aplicativo está pronto“</string>
+
+    <!-- Text auf dem letzten Onboarding Screen -->
+    <string name="onboarding_go_text">"Obrigado por ajudar a proteger-se a si e aos outros"</string>
+
+    <!-- Button-Label auf dem letzten Onboarding screen -->
+    <string name="onboarding_go_button">"Começar"</string>
+
+    <!-- Titel auf Location-Permission Screen -->
+    <string name="android_onboarding_bt_permission_title">"Ativar Localização para Bluetooth"</string>
+
+    <!-- Text auf Location-Permission Screen -->
+    <string name="android_onboarding_bt_permission_text">"Para que o aplicativo funcione e aceda ao Bluetooth, tem de ativar a função de localização."</string>
+
+    <!-- Button-Text auf Location-Permission Screen -->
+    <string name="android_onboarding_bt_permission_button">"Permitir"</string>
+
+    <!-- Label für Info-Section -->
+    <string name="android_onboarding_bt_permission_goodtoknow">"Bom saber“</string>
+
+    <!-- Info-Titel 1 auf Location-Permission Screen -->
+    <string name="android_onboarding_bt_permission_info_1_title">"A sua localização mantém-se em segredo“</string>
+
+    <!-- Info-Text 1 auf Location-Permission Screen -->
+    <string name="android_onboarding_bt_permission_info_1_text">"Nos dispositivos Android, para ativar o Bluetooth é necessario ativar a localização. Essa é a razão porque a localização deve ser ativada mesmo que DjuntaMon não utilize a localização em nenhum momento."</string>
+
+    <!-- Info-Titel 2 auf Location-Permission Screen -->
+    <string name="android_onboarding_bt_permission_info_2_title">"Você mantém-se anónimo"</string>
+
+    <!-- Info-Text 2 auf Location-Permission Screen -->
+    <string name="android_onboarding_bt_permission_info_2_text">"Nenhum dado pessoal é visível pelo Bluetooth."</string>
+
+    <!-- Titel auf Battery-Permission Screen -->
+    <string name="android_onboarding_battery_permission_title">"Ignore a otimização da bateria"</string>
+
+    <!-- Text auf Battery-Permission Screen -->
+    <string name="android_onboarding_battery_permission_text">"Para ser possível identificar Encontros, a função de otimização da bateria deste aplicativo deve estar desativada."</string>
+
+    <!-- Button-Text auf Battery-Permission Screen -->
+    <string name="android_onboarding_battery_permission_button">"Permitir"</string>
+
+    <!-- Info-Titel 1 auf Battery-Permission Screen -->
+    <string name="android_onboarding_battery_permission_info_1_title">"Somente para este aplicativo“</string>
+
+    <!-- Info-Text 1 auf Battery-Permission Screen -->
+    <string name="android_onboarding_battery_permission_info_1_text">"Para que este aplicativo funcione, tem que estar ativo em segundo plano (background). A otimização da bateria pode ser desativada para determinados aplicativos, para que isso seja possível."</string>
+
+    <!-- Info-Titel 2 auf Battery-Permission Screen -->
+    <string name="android_onboarding_battery_permission_info_2_title">"Ligeiro aumento na utilização da bateria"</string>
+
+    <!-- Info-Text 2 auf Battery-Permission Screen -->
+    <string name="android_onboarding_battery_permission_info_2_text">"O Aplicativo funciona utilizando o mínimo de bateria possível. Sentirá somente um ligeiro aumento do consumo de bateria."</string>
+
+    <!-- Button-Text auf Location-Permission Screen - Zugelassen -->
+    <string name="android_onboarding_bt_permission_button_allowed">"Ativado"</string>
+
+    <!-- Button-Text auf Battery-Permission Screen - Deaktiviert -->
+    <string name="android_onboarding_battery_permission_button_deactivated">"Desativado"</string>
+
+    <!-- Homescreen: Titel bei Fehler mit Daten -->
+    <string name="homescreen_meldung_data_outdated_title">"Sem dados atuais“</string>
+
+    <!-- Homescreen: Text bei Fehler mit Daten -->
+    <string name="homescreen_meldung_data_outdated_text">"Não tem sido possível sincronizar relatórios à algum tempo. Por favor confirme que o seu telemóvel está ligado à INTERNET."</string>
+
+    <!-- Homescreen: Button Titel -->
+    <string name="homescreen_meldung_data_outdated_retry_button">"Tentar novamente“</string>
+
+    <!-- Titel Fehlermeldung für ungültigen Code -->
+    <string name="inform_code_invalid_title">"Código invalido"</string>
+
+    <!-- Fehlermeldung Subtitle ungültiger Code -->
+    <string name="inform_code_invalid_subtitle">"Se tem alguma dúvida: Linha emergência
+800 11 12"</string>
+
+    <!-- Datum: Vor 1 Tag -->
+    <string name="date_one_day_ago">"1 dia atrás“</string>
+
+    <!-- Meldungen Detail: Titel -->
+    <string name="meldung_detail_new_contact_title">"Novo relatório“</string>
+
+    <!-- Meldungen Detail: Text -->
+    <string name="meldung_detail_new_contact_subtitle">"Neste dia, é possível ter havido uma infecção."</string>
+
+    <!-- Fehler mit Uhrzeit Titel -->
+    <string name="time_inconsistency_title">"Erro de data/hora"</string>
+
+    <!-- Fehler mit Uhrzeit Text -->
+    <string name="time_inconsistency_text">"A hora deve estar correta para que o rastreamento funcione."</string>
+
+    <!-- Begegnungen: Neustart Titel -->
+    <string name="begegnungen_restart_error_title">"Necessário re-iniciar"</string>
+
+    <!-- Begegnungen: Neustart Text -->
+    <string name="begegnungen_restart_error_text">"Ocorreu um erro inesperado reinicie o seu dispositivo."</string>
+
+    <!-- Fehler Titel für Hintergrund-Fehler -->
+    <string name="meldungen_background_error_title">"Atualizações em segundo plano desativadas."</string>
+
+    <!-- Text für Hintergrund Fehler -->
+    <string name="meldungen_background_error_text">"Altere as configurações para receber notificações fora do Aplicativo assim como eventos de um relatorio."</string>
+
+    <!-- Button Titel für Hintergrundfehler beheben -->
+    <string name="meldungen_background_error_button">"Alterar configurações"</string>
+
+    <!-- Default message for force update -->
+    <string name="force_update_text">"Instale a nova versão do Aplicativo para que o rastreamento funcione."</string>
+
+    <!-- Ignorieren Button Titel -->
+    <string name="meldung_in_app_alert_ignore_button">"Ignorar"</string>
+
+    <!-- Button Titel -->
+    <string name="meldung_in_app_alert_accept_button">"Para Notificações“</string>
+
+    <!-- Meldungen Detail: Button Titel -->
+    <string name="meldungen_detail_call_again">"Ligar novamente“</string>
+
+    <!-- Fehlernachricht für Netzwerkfehler -->
+    <string name="network_error">"Favor verificar a sua ligação à INTERNET"</string>
+
+    <!-- Unerwarteter Fehler, mit Aufforderung Aktion erneut zu versuchen -->
+    <string name="unexpected_error_with_retry">"Ocorreu um erro inesperado, tente novamente."</string>
+
+    <!-- Fehlermeldung, wenn die Antwort des Authentifizierungs-Services nicht verwertbar ist -->
+    <string name="invalid_response_auth_code">"Devido a um erro de sistema, o seu código de autenticação, não pôde ser aplicado correctamente. Por favor contacte a linha de apoio."</string>
+
+    <!-- Titel für Fehlermeldung mit Standort -->
+    <string name="error_location_permission_title">"Recusada a utilização da localização“</string>
+
+    <!-- Button für Fehlermeldung mit Standort -->
+    <string name="error_location_permission_button">"Permitir"</string>
+
+    <!-- VoiceOver: Datum -->
+    <string name="accessibility_date">"Data"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_1nd">"Primeiro"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_2nd">"Segundo"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_3nd">"Terceiro"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_4nd">"Quarto"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_5nd">"Quinto"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_6nd">"Sexto"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_7nd">"Sétimo"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_8nd">"Oitavo"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_9nd">"Nono"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_10nd">"Décimo"</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_11nd">"Décimo Primeiro“</string>
+
+    <!-- Voiceover Codeeingabe: Nummerierte Textfelder -->
+    <string name="accessibility_12nd">"Décimo segundo"</string>
+
+    <!-- Voiceover: Hilfetext bei Codeeingabe -->
+    <string name="accessibility_code_button_disabled_hint">"Por favor introduza todo o código e depois pressione o botão."</string>
+
+    <!-- Fehler Titel: Akkuverbrauch aktiviert -->
+    <string name="error_battery_optimization_title">"Otimização da utilização da Bateria ativado“</string>
+
+    <!-- Fehler: Standortinformationen / Bluetooth -->
+    <string name="foreground_service_notification_error_location_service">"Ative a informação de localização para que o Aplicativo possa usar Bluetooth. O Aplicativo em nenhum momento usa a localização."</string>
+
+    <!-- Location Services ausgeschaltet Titel -->
+    <string name="error_location_services_title">"Localização desativada"</string>
+
+    <!-- Location Services ausgeschaltet Button -->
+    <string name="error_location_services_button">"Ativar localização"</string>
+
+    <!-- Information Button in the navigation bar -->
+    <string name="accessibility_info_button">"Informação"</string>
+
+    <!-- Debug: Anzahl Kontakte Titel -->
+    <string name="debug_sdk_state_number_contacts">"Numero de contactos“</string>
+
+    <!-- Synchronisations-Fehler Titel -->
+    <string name="sync_warning_notification_title">"Ocorreu um erro“</string>
+
+    <!-- Synchronisations-Fehler Text -->
+    <string name="sync_warning_notification_text">"Abrir o Aplicativo para corrigir o erro."</string>
+
+    <!-- Meldungen Detail: Button bei Vollansicht -->
+    <string name="meldung_animation_continue_button">"Continuar"</string>
+
+    <!-- Titel Impressum Menu -->
+    <string name="menu_impressum">"Imprimir"</string>
+
+    <!-- Synchronisations-Fehler Titel -->
+    <string name="sync_error_title">"Erro inesperado“</string>
+
+    <!-- Synchronisations-Fehler Text -->
+    <string name="sync_error_text">"Ocorreu um erro de sincronização“</string>
+
+    <!-- Synchronisations-Fehler Button Titel -->
+    <string name="sync_error_button">"Tentar novamente"</string>
+
+    <!-- Begegnungen: FAQ Titel -->
+    <string name="begegnung_detail_faq1_title">"O que é um encontro?"</string>
+
+    <!-- Begegnungen: FAQ Text -->
+    <string name="begegnung_detail_faq1_text">"Se dois telemóveis estão perto um do outro por algum tempo, é considerado um encontro."</string>
+
+    <!-- Begegnungen: FAQ Titel -->
+    <string name="begegnung_detail_faq2_title">"Os meus dados estão seguros?"</string>
+
+    <!-- Begegnungen: FAQ Text -->
+    <string name="begegnung_detail_faq2_text">"No caso de um encontro, somente um código encriptado é trocado. Esse código é guardado no Telemóvel e descartado 21 dias depois."</string>
+
+    <!-- Begegnungen: FAQ Titel -->
+    <string name="begegnungen_detail_faq3_title">"O Bluetooth tem que estar sempre ligado?"</string>
+
+    <!-- Begegnungen: FAQ Text -->
+    <string name="begegnungen_detail_faq3_text">"Para que os encontros possam ser reconhecidos, Bluetooth tem que estar sempre ligado a todos os momentos. Este facto causa um ligeiro aumento da utilização da bateria."</string>
+
+    <!-- FAQ Button Titel -->
+    <string name="faq_button_title">"Perguntas Frequentes"</string>
+
+    <!-- Meldungen Keine Meldungen FAQ Titel -->
+    <string name="meldungen_nomeldungen_faq1_title">"O que são Relatórios?"</string>
+
+    <!-- Meldungen: Keine Meldungen FAQ Text -->
+    <string name="meldungen_nomeldungen_faq1_text">"DjuntaMon verifica regularmente, se alguma pessoa que esteve perto de si foi infectado com o virus.Se houver a possibilidade de ter sido potencialmente infectado, você receberá uma mensagem no seu écran bloqueado."</string>
+
+    <!-- Meldungen: Keine Meldungen FAQ Titel -->
+    <string name="meldungen_nomeldungen_faq2_titel">"O que é uma potencial infecção?"</string>
+
+    <!-- Meldungen: Keine Meldungen FAQ Text -->
+    <string name="meldungen_nomeldungen_faq2_text">"O aplicativo não valida somente se teve encontros com terceiros, mas também a distancia e o tempo que tiveram juntos. Será notificado se existirem suspeitas suficientes que possa ter sido infectado."</string>
+
+    <!-- Meldungen Detail Weisse Box Texte Unten -->
+    <string name="meldungen_detail_explanation_text3">"Assim que tiver sintomas, contacte a linha de apoio."</string>
+
+    <!-- Meldungen: Meldung Weisse Box Link Titel -->
+    <string name="meldungen_explanation_link_title">"Instruções sobre auto-quarentena"</string>
+
+    <!-- Meldungen: Meldung Weisse Box Link URL -->
+    <string name="meldungen_explanation_link_url">"https://covid19.cv/"</string>
+
+    <!-- Meldungen: Meldungen FAQ -->
+    <string name="meldungen_meldungen_faq1_title">"Devo chamar?"</string>
+
+    <!-- Meldungen: Meldungen FAQ Text -->
+    <string name="meldungen_meldungen_faq1_text">"É importante que faça a ligação sempre que receber uma notificação. Você continuará no anonimato. Nenhum dado pessoal será registado."</string>
+
+    <!-- Meldungen Detail: Anruf Titel -->
+    <string name="meldungen_detail_call_thankyou_title">"Obrigado pela sua cooperação."</string>
+
+    <!-- Meldungen Detail Anruf Danke Subtitel -->
+    <string name="meldungen_detail_call_thankyou_subtitle">"Você esta a proteger os seus amigos e sua comunidade."</string>
+
+    <!-- Meldungen Detail Keine Meldungen Titel -->
+    <string name="meldungen_detail_no_meldungen_title">"Não existem novas notificações."</string>
+
+    <!-- Meldungen Detail Keine Meldung Subtitel -->
+    <string name="meldungen_detail_no_meldungen_subtitle">"A ultima potencial infecção ocorreu há mais de 10 dias."</string>
+
+    <!-- Meldungen Detail: Keine Meldungen Button -->
+    <string name="meldungen_detail_no_meldungen_continue">"Continuar"</string>
+
+    <!-- Meldungen Detail: Keine Meldungen Hinweis -->
+    <string name="meldungen_detail_no_meldungen_hinweis">"Tome nota“</string>
+
+    <!-- Keine Meldungen Link in weisser Box Titel -->
+    <string name="no_meldungen_box_link">"Desta forma protegemo-nos“</string>
+
+    <!-- Keine Meldungen Weisse Box Link URL -->
+    <string name="no_meldungen_box_url">"https://covid19.cv/"</string>
+
+    <!-- Informieren Detail: FAQ Titel -->
+    <string name="inform_detail_faq1_title">"O que é o Código COVID?"</string>
+
+    <!-- Inform Detail: FAQ Text -->
+    <string name="inform_detail_faq1_text">"As pessoas que contraem o virus, recebem um código COVID das autoridades sanitárias. Desta forma garantimos que somente casos confirmados são registados no Aplicativo. "</string>
+
+    <!-- Inform Detail: FAQ Titel -->
+    <string name="inform_detail_faq2_title">"Como eu garanto que estou anónimo?"</string>
+
+    <!-- Inform Detail FAQ Text -->
+    <string name="inform_detail_faq2_text">"Somente chaves temporárias são enviadas do seu telemóvel. Nenhum dado pessoal. Outros portadores do aplicativo DjuntaMon podem ver se tiveram encontros com o seu Aplicativo nos últimos dias."</string>
+
+    <!-- Informieren: Titel Tracing beendet -->
+    <string name="inform_send_endtracing_title">"Rastreamento terminado"</string>
+
+    <!-- Informieren: Text Tracing beendet -->
+    <string name="inform_send_endtracing_text">"Seguindo um texto positivo, o rastreamento terminou automaticamente."</string>
+
+    <!-- Telefonnummer der Infoline -->
+    <string name="infoline_tel_number">"888 11 12"</string>
+
+    <!-- URL für Häufige Fragen Button -->
+    <string name="faq_button_url">"https://covid19.cv/#faqs"</string>
+
+    <!-- Informieren Flow: Titel erster Screen -->
+    <string name="inform_code_intro_title">"Informação importante"</string>
+
+    <!-- Informieren-Flow: Erster Screen Text -->
+    <string name="inform_code_intro_text">"Apesar de nenhum dado pessoal seu ser enviado, é possível que alguém se lembre de ter estado consigo numa determinada data. "</string>
+
+    <!-- Inform-Flow: Erster Screen Button -->
+    <string name="inform_code_intro_button">"OK"</string>
+
+    <!-- Symptome: FAQ Titel -->
+    <string name="symptom_faq1_title">"Inseguro sobre sintomas?"</string>
+
+    <!-- Symptome: FAQ Text -->
+    <string name="symptom_faq1_text">"Tem sintomas mas está inseguro do que fazer? Ligue para a linha de apoio 800 11 12 e o ajudarão nos próximos passos."</string>
+
+    <!-- Meldungen: Positiv getestet FAQ Titel -->
+    <string name="meldungen_positive_tested_faq1_title">"Porque razão o rastreamento terminou?"</string>
+
+    <!-- Meldungen: Positiv getestet FAQ Text -->
+    <string name="meldungen_positive_tested_faq1_text">"Seguindo um texto positivo, o rastreamento terminou automaticamente."</string>
+
+    <!-- Sprache Abkürzung (BITTE NICHT ÄNDERN) -->
+    <string name="language_key">"PT"</string>
+
+    <!-- Meldungen Homescreen: Name Hotline -->
+    <string name="exposed_info_contact_hotline_name">"Linha de apoio Coronavirus"</string>
+
+    <!-- Meldung Detail: "Noch 1 Tag" Label -->
+    <string name="date_in_one_day">"Mais um dia“</string>
+
+    <!-- Meldung Detail: Anzeige "Noch x Tage" {COUNT} wird durch Zahl ersetzt -->
+    <string name="date_in_days">"Faltam {COUNT} dias"</string>
+
+    <!-- Datum: Text vor Datum: am 26.2.2020 / {DATE} wird ersetzt durch Datum -->
+    <string name="date_text_before_date">"Em {DATE}"</string>
+
+    <!-- Accessibility Talk back information for android back button in toolbar -->
+    <string name="android_accessibility_back_button">"Retroceder"</string>
+</resources>

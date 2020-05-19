@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -33,17 +34,18 @@ import androidx.transition.TransitionManager;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import org.dpppt.android.sdk.internal.database.models.ExposureDay;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TimeZone;
 
-import ch.admin.bag.dp3t.storage.SecureStorage;
-import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
 import ch.admin.bag.dp3t.R;
+import ch.admin.bag.dp3t.storage.SecureStorage;
 import ch.admin.bag.dp3t.util.DateUtils;
 import ch.admin.bag.dp3t.util.NotificationUtil;
 import ch.admin.bag.dp3t.util.PhoneUtil;
-import org.dpppt.android.sdk.internal.database.models.ExposureDay;
+import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
 
 public class ReportsFragment extends Fragment {
 
@@ -183,13 +185,13 @@ public class ReportsFragment extends Fragment {
 				items.add(new Pair<>(ReportsPagerFragment.Type.NO_REPORTS, null));
 			}
 
-			/* Debug items
+			/* TODO Debug items  */
 			items.clear();
 			items.add(new Pair<>(ReportsPagerFragment.Type.NO_REPORTS, null));
 			items.add(new Pair<>(ReportsPagerFragment.Type.POSSIBLE_INFECTION, 1585835019000L));
 			items.add(new Pair<>(ReportsPagerFragment.Type.NEW_CONTACT, 1585835019000L));
 			items.add(new Pair<>(ReportsPagerFragment.Type.POSITIVE_TESTED, 1585835019000L));
-			 */
+
 
 			pagerAdapter.updateItems(items);
 		});
