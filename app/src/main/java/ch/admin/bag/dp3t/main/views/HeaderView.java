@@ -33,6 +33,8 @@ import org.dpppt.android.sdk.TracingStatus;
 
 import java.util.Random;
 
+import org.dpppt.android.sdk.TracingStatus;
+
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.main.model.NotificationState;
 import ch.admin.bag.dp3t.main.model.TracingState;
@@ -128,20 +130,14 @@ public class HeaderView extends ConstraintLayout {
 				iconTintColor = R.color.white;
 				backgroundColor = getResources().getColor(R.color.header_bg_error, null);
 				switch (error) {
-					case SYNC_ERROR_TIMING:
-					case MISSING_LOCATION_PERMISSION:
-					case BLE_NOT_SUPPORTED:
-					case BLE_INTERNAL_ERROR:
-					case BATTERY_OPTIMIZER_ENABLED:
-					case BLE_ADVERTISING_ERROR:
-					case BLE_SCANNER_ERROR:
-						iconRes = R.drawable.ic_warning;
-						break;
 					case BLE_DISABLED:
 						iconRes = R.drawable.ic_bluetooth_off;
 						break;
 					case LOCATION_SERVICE_DISABLED:
 						iconRes = R.drawable.ic_header_gps_off;
+						break;
+					default:
+						iconRes = R.drawable.ic_warning;
 				}
 			} else {
 				if (state.getTracingState() == TracingState.ACTIVE) {

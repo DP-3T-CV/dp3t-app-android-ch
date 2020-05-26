@@ -36,7 +36,10 @@
 
 	<style name="NextStep.Text.Small">
 		<item name="android:textSize">@dimen/text_size_small</item>
-		<item name="android:textColor">@color/grey_medium</item>
+	</style>
+
+	<style name="NextStep.Text.Small.Light">
+		<item name="android:textColor">@color/anthracite_lighter</item>
 	</style>
 
 	<style name="NextStep.Text.Red">
@@ -202,6 +205,13 @@
 		<item name="android:textAppearance">@style/NextStep.Text</item>
 		<item name="android:textColor">@color/dark_main</item>
 		<item name="android:paddingStart">@dimen/spacing_medium</item>
+	</style>
+
+	<style name="NextStep.AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+		<item name="colorAccent">@color/blue_main</item>
+		<item name="android:textColor">@color/dark_main</item>
+		<item name="android:textColorPrimary">@color/dark_main</item>
+		<item name="android:buttonStyle">@style/NextStep.Button.Transparent.Blue.Light</item>
 	</style>
 
 </resources>

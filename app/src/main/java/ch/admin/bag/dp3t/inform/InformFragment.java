@@ -11,14 +11,24 @@ package ch.admin.bag.dp3t.inform;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import java.util.Date;
+import java.util.concurrent.CancellationException;
 
+import com.google.android.gms.common.api.ApiException;
+
+import org.dpppt.android.sdk.DP3T;
+import org.dpppt.android.sdk.backend.ResponseCallback;
+import org.dpppt.android.sdk.models.ExposeeAuthMethodAuthorization;
+
+import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.inform.views.ChainedEditText;
 import ch.admin.bag.dp3t.networking.AuthCodeRepository;
 import ch.admin.bag.dp3t.networking.errors.InvalidCodeError;
@@ -26,12 +36,8 @@ import ch.admin.bag.dp3t.networking.errors.ResponseError;
 import ch.admin.bag.dp3t.networking.models.AuthenticationCodeRequestModel;
 import ch.admin.bag.dp3t.networking.models.AuthenticationCodeResponseModel;
 import ch.admin.bag.dp3t.storage.SecureStorage;
-import ch.admin.bag.dp3t.R;
-import ch.admin.bag.dp3t.util.InfoDialog;
 import ch.admin.bag.dp3t.util.JwtUtil;
-import org.dpppt.android.sdk.DP3T;
-import org.dpppt.android.sdk.backend.ResponseCallback;
-import org.dpppt.android.sdk.backend.models.ExposeeAuthMethodAuthorization;
+import ch.admin.bag.dp3t.util.PhoneUtil;
 
 public class InformFragment extends Fragment {
 
@@ -90,14 +96,17 @@ public class InformFragment extends Fragment {
 		}
 
 		buttonSend.setOnClickListener(v -> {
+			long lastTimestamp = secureStorage.getLastInformRequestTime();
+			String lastAuthToken = secureStorage.getLastInformToken();
+
 			buttonSend.setEnabled(false);
 			setInvalidCodeErrorVisible(false);
 			String authCode = authCodeInput.getText();
 
 			progressDialog = createProgressDialog();
-			if (System.currentTimeMillis() - lastRequestTime < TIMEOUT_VALID_CODE && lastToken != null) {
-				Date onsetDate = JwtUtil.getOnsetDate(lastToken);
-				informExposed(onsetDate, getAuthorizationHeader(lastToken));
+			if (System.currentTimeMillis() - lastTimestamp < TIMEOUT_VALID_CODE && lastAuthToken != null) {
+				Date onsetDate = JwtUtil.getOnsetDate(lastAuthToken);
+				informExposed(onsetDate, getAuthorizationHeader(lastAuthToken));
 			} else {
 				authenticateInput(authCode);
 			}
@@ -105,6 +114,10 @@ public class InformFragment extends Fragment {
 
 		view.findViewById(R.id.cancel_button).setOnClickListener(v -> {
 			getActivity().finish();
+		});
+
+		view.findViewById(R.id.inform_invalid_code_error).setOnClickListener(v -> {
+			PhoneUtil.callAppHotline(v.getContext());
 		});
 	}
 
@@ -120,7 +133,7 @@ public class InformFragment extends Fragment {
 
 						Date onsetDate = JwtUtil.getOnsetDate(accessToken);
 						if (onsetDate == null) {
-							showErrorDialog(getString(R.string.invalid_response_auth_code), null);
+							showErrorDialog(InformRequestError.BLACK_INVALID_AUTH_RESPONSE_FORM);
 							if (progressDialog != null && progressDialog.isShowing()) {
 								progressDialog.dismiss();
 							}
@@ -132,6 +145,7 @@ public class InformFragment extends Fragment {
 
 					@Override
 					public void onError(Throwable throwable) {
+						throwable.printStackTrace();
 						if (progressDialog != null && progressDialog.isShowing()) {
 							progressDialog.dismiss();
 						}
@@ -139,10 +153,10 @@ public class InformFragment extends Fragment {
 							setInvalidCodeErrorVisible(true);
 							return;
 						} else if (throwable instanceof ResponseError) {
-							showErrorDialog(getString(R.string.unexpected_error_title),
+							showErrorDialog(InformRequestError.BLACK_STATUS_ERROR,
 									String.valueOf(((ResponseError) throwable).getStatusCode()));
 						} else {
-							showErrorDialog(getString(R.string.network_error), null);
+							showErrorDialog(InformRequestError.BLACK_MISC_NETWORK_ERROR);
 						}
 						buttonSend.setEnabled(true);
 					}
@@ -150,7 +164,7 @@ public class InformFragment extends Fragment {
 	}
 
 	private void informExposed(Date onsetDate, String authorizationHeader) {
-		DP3T.sendIAmInfected(getContext(), onsetDate,
+		DP3T.sendIAmInfected(getActivity(), onsetDate,
 				new ExposeeAuthMethodAuthorization(authorizationHeader), new ResponseCallback<Void>() {
 					@Override
 					public void onSuccess(Void response) {
@@ -170,12 +184,23 @@ public class InformFragment extends Fragment {
 						if (progressDialog != null && progressDialog.isShowing()) {
 							progressDialog.dismiss();
 						}
-						showErrorDialog(getString(R.string.network_error), null);
+						if (throwable instanceof ResponseError) {
+							showErrorDialog(InformRequestError.RED_STATUS_ERROR,
+									String.valueOf(((ResponseError) throwable).getStatusCode()));
+						} else if (throwable instanceof CancellationException) {
+							showErrorDialog(InformRequestError.RED_USER_CANCELLED_SHARE);
+						} else if (throwable instanceof ApiException) {
+							showErrorDialog(InformRequestError.RED_EXPOSURE_API_ERROR,
+									String.valueOf(((ApiException) throwable).getStatusCode()));
+						} else {
+							showErrorDialog(InformRequestError.RED_MISC_NETWORK_ERROR);
+						}
 						throwable.printStackTrace();
 						buttonSend.setEnabled(true);
 					}
 				});
 	}
+
 
 	@Override
 	public void onResume() {
@@ -194,8 +219,20 @@ public class InformFragment extends Fragment {
 				.show();
 	}
 
-	private void showErrorDialog(String error, @Nullable String errorCode) {
-		InfoDialog.newInstanceWithDetail(error, errorCode).show(getChildFragmentManager(), InfoDialog.class.getCanonicalName());
+	private void showErrorDialog(InformRequestError error) {
+		showErrorDialog(error, null);
+	}
+
+	private void showErrorDialog(InformRequestError error, @Nullable String addErrorCode) {
+		AlertDialog.Builder errorDialogBuilder = new AlertDialog.Builder(getContext(), R.style.NextStep_AlertDialogStyle)
+				.setMessage(error.getErrorMessage())
+				.setPositiveButton(R.string.android_button_ok, (dialog, which) -> {});
+		String errorCode = error.getErrorCode(addErrorCode);
+		TextView errorCodeView =
+				(TextView) getLayoutInflater().inflate(R.layout.view_dialog_error_code, (ViewGroup) getView(), false);
+		errorCodeView.setText(errorCode);
+		errorDialogBuilder.setView(errorCodeView);
+		errorDialogBuilder.show();
 	}
 
 	private String getAuthorizationHeader(String accessToken) {

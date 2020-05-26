@@ -43,9 +43,10 @@ import ch.admin.bag.dp3t.main.model.NotificationStateError;
 import ch.admin.bag.dp3t.main.views.HeaderView;
 import ch.admin.bag.dp3t.reports.ReportsFragment;
 import ch.admin.bag.dp3t.storage.SecureStorage;
+import ch.admin.bag.dp3t.util.AssetUtil;
+import ch.admin.bag.dp3t.util.NotificationErrorStateHelper;
 import ch.admin.bag.dp3t.util.NotificationStateHelper;
 import ch.admin.bag.dp3t.util.NotificationUtil;
-import ch.admin.bag.dp3t.util.NotificatonErrorStateHelper;
 import ch.admin.bag.dp3t.util.TracingErrorStateHelper;
 import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
 import ch.admin.bag.dp3t.whattodo.WtdPositiveTestFragment;
@@ -139,6 +140,7 @@ public class HomeFragment extends Fragment {
 		setupNotification();
 		setupWhatToDo();
 		setupDebugButton();
+		setupNonProductionHint();
 		setupScrollBehavior();
 	}
 
@@ -287,7 +289,7 @@ public class HomeFragment extends Fragment {
 							});
 				});
 			} else if (!isNotificationChannelEnabled(getContext(), NotificationUtil.NOTIFICATION_CHANNEL_ID)) {
-				NotificatonErrorStateHelper
+				NotificationErrorStateHelper
 						.updateNotificationErrorView(reportErrorView, NotificationStateError.NOTIFICATION_STATE_ERROR);
 				reportErrorView.findViewById(R.id.error_status_button).setOnClickListener(v -> {
 					openChannelSettings(NotificationUtil.NOTIFICATION_CHANNEL_ID);
@@ -318,7 +320,7 @@ public class HomeFragment extends Fragment {
 				NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 				NotificationChannel channel = manager.getNotificationChannel(channelId);
 				if (channel == null) {
-					return true;
+					return manager.areNotificationsEnabled();
 				}
 				return channel.getImportance() != NotificationManager.IMPORTANCE_NONE &&
 						!(!manager.areNotificationsEnabled() &&
@@ -354,6 +356,15 @@ public class HomeFragment extends Fragment {
 			debugButton.setOnClickListener(v -> DebugFragment.startDebugFragment(getParentFragmentManager()));
 		} else {
 			debugButton.setVisibility(View.GONE);
+		}
+	}
+
+	private void setupNonProductionHint() {
+		View nonProduction = getView().findViewById(R.id.non_production_message);
+		if (BuildConfig.FLAVOR.equals("prod")) {
+			nonProduction.setVisibility(View.GONE);
+		} else {
+			nonProduction.setVisibility(VISIBLE);
 		}
 	}
 

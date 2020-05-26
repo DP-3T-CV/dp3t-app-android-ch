@@ -7,9 +7,9 @@
  *
  * SPDX-License-Identifier: MPL-2.0
  */
-
 package ch.admin.bag.dp3t.util;
 
+import android.content.Context;
 import android.graphics.Paint;
 import android.text.TextUtils;
 import android.view.View;
@@ -22,23 +22,23 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import ch.admin.bag.dp3t.R;
 import org.dpppt.android.sdk.TracingStatus;
+
+import ch.admin.bag.dp3t.R;
 
 public class TracingErrorStateHelper {
 
 	private static final List<TracingStatus.ErrorState> possibleErrorStatesOrderedByPriority = Arrays.asList(
+			TracingStatus.ErrorState.GAEN_NOT_AVAILABLE,
+			TracingStatus.ErrorState.GAEN_UNEXPECTEDLY_DISABLED,
 			TracingStatus.ErrorState.BLE_NOT_SUPPORTED,
-			TracingStatus.ErrorState.MISSING_LOCATION_PERMISSION,
 			TracingStatus.ErrorState.BLE_DISABLED,
 			TracingStatus.ErrorState.LOCATION_SERVICE_DISABLED,
 			TracingStatus.ErrorState.BATTERY_OPTIMIZER_ENABLED,
-			TracingStatus.ErrorState.SYNC_ERROR_TIMING,
-			TracingStatus.ErrorState.BLE_INTERNAL_ERROR,
-			TracingStatus.ErrorState.BLE_ADVERTISING_ERROR,
-			TracingStatus.ErrorState.BLE_SCANNER_ERROR);
+			TracingStatus.ErrorState.SYNC_ERROR_TIMING);
 
 	private static final List<TracingStatus.ErrorState> possibleNotificationErrorStatesOrderedByPriority = Arrays.asList(
+			TracingStatus.ErrorState.SYNC_ERROR_API_EXCPETION,
 			TracingStatus.ErrorState.SYNC_ERROR_DATABASE,
 			TracingStatus.ErrorState.SYNC_ERROR_SERVER,
 			TracingStatus.ErrorState.SYNC_ERROR_NETWORK,
@@ -48,56 +48,54 @@ public class TracingErrorStateHelper {
 	@StringRes
 	private static int getTitle(TracingStatus.ErrorState tracingErrorState) {
 		switch (tracingErrorState) {
+			case BATTERY_OPTIMIZER_ENABLED:
+				return R.string.android_error_battery_optimization_title;
 			case LOCATION_SERVICE_DISABLED:
-				return R.string.error_location_services_title;
+				return R.string.android_error_location_services_title;
 			case BLE_DISABLED:
 				return R.string.bluetooth_turned_off_title;
-			case MISSING_LOCATION_PERMISSION:
-				return R.string.error_location_permission_title;
-			case BATTERY_OPTIMIZER_ENABLED:
-				return R.string.error_battery_optimization_title;
 			case SYNC_ERROR_TIMING:
 				return R.string.time_inconsistency_title;
+			case GAEN_NOT_AVAILABLE:
+				return R.string.gaen_not_aviable;
+			case GAEN_UNEXPECTEDLY_DISABLED:
+				return R.string.bluetooth_setting_tracking_inactive;
 			case SYNC_ERROR_SERVER:
 			case SYNC_ERROR_NETWORK:
 			case SYNC_ERROR_SIGNATURE:
+			case SYNC_ERROR_API_EXCPETION:
+				return R.string.homescreen_meldung_data_outdated_title;
 			case SYNC_ERROR_DATABASE:
-				return R.string.sync_error_title;
+				return R.string.unexpected_error_title;
 			case BLE_NOT_SUPPORTED:
-			case BLE_INTERNAL_ERROR:
-			case BLE_ADVERTISING_ERROR:
-			case BLE_SCANNER_ERROR:
 			default:
 				return R.string.begegnungen_restart_error_title;
 		}
 	}
 
-	@StringRes
-	private static int getText(TracingStatus.ErrorState tracingErrorState) {
-		return tracingErrorState.getErrorString();
+	private static String getText(Context context, TracingStatus.ErrorState tracingErrorState) {
+		return tracingErrorState.getErrorString(context);
 	}
 
 	@DrawableRes
 	private static int getIcon(TracingStatus.ErrorState tracingErrorState) {
 		switch (tracingErrorState) {
+			case BATTERY_OPTIMIZER_ENABLED:
+				return R.drawable.ic_battery_power;
 			case LOCATION_SERVICE_DISABLED:
 				return R.drawable.ic_gps_off;
 			case BLE_DISABLED:
 				return R.drawable.ic_bluetooth_off;
-			case MISSING_LOCATION_PERMISSION:
-				return R.drawable.ic_location_off_red;
-			case BATTERY_OPTIMIZER_ENABLED:
-				return R.drawable.ic_battery;
 			case SYNC_ERROR_TIMING:
 				return R.drawable.ic_time;
+			case GAEN_NOT_AVAILABLE:
+			case GAEN_UNEXPECTEDLY_DISABLED:
 			case SYNC_ERROR_SERVER:
 			case SYNC_ERROR_NETWORK:
 			case SYNC_ERROR_DATABASE:
 			case SYNC_ERROR_SIGNATURE:
+			case SYNC_ERROR_API_EXCPETION:
 			case BLE_NOT_SUPPORTED:
-			case BLE_INTERNAL_ERROR:
-			case BLE_ADVERTISING_ERROR:
-			case BLE_SCANNER_ERROR:
 			default:
 				return R.drawable.ic_warning_red;
 		}
@@ -106,23 +104,24 @@ public class TracingErrorStateHelper {
 	@StringRes
 	private static int getButtonText(TracingStatus.ErrorState errorState) {
 		switch (errorState) {
+			case BATTERY_OPTIMIZER_ENABLED:
+				return R.string.android_error_battery_optimization_button;
 			case LOCATION_SERVICE_DISABLED:
-				return R.string.error_location_services_button;
+				return R.string.android_error_location_services_button;
 			case BLE_DISABLED:
 				return R.string.bluetooth_turn_on_button_title;
-			case MISSING_LOCATION_PERMISSION:
-			case BATTERY_OPTIMIZER_ENABLED:
-				return R.string.error_location_permission_button;
+			case GAEN_UNEXPECTEDLY_DISABLED:
+				return R.string.onboarding_gaen_button_activate;
 			case SYNC_ERROR_SERVER:
 			case SYNC_ERROR_NETWORK:
 			case SYNC_ERROR_DATABASE:
 			case SYNC_ERROR_SIGNATURE:
 				return R.string.homescreen_meldung_data_outdated_retry_button;
+			case GAEN_NOT_AVAILABLE:
+				return R.string.playservices_update;
 			case SYNC_ERROR_TIMING:
 			case BLE_NOT_SUPPORTED:
-			case BLE_INTERNAL_ERROR:
-			case BLE_ADVERTISING_ERROR:
-			case BLE_SCANNER_ERROR:
+			case SYNC_ERROR_API_EXCPETION:
 			default:
 				return -1;
 		}
@@ -172,8 +171,8 @@ public class TracingErrorStateHelper {
 		titleView.setText(TracingErrorStateHelper.getTitle(errorState));
 		titleView.setVisibility(View.VISIBLE);
 
-		if (TracingErrorStateHelper.getText(errorState) != -1) {
-			textView.setText(TracingErrorStateHelper.getText(errorState));
+		if (TracingErrorStateHelper.getText(textView.getContext(), errorState) != null) {
+			textView.setText(TracingErrorStateHelper.getText(textView.getContext(), errorState));
 			textView.setVisibility(View.VISIBLE);
 		} else {
 			textView.setVisibility(View.GONE);
@@ -198,22 +197,21 @@ public class TracingErrorStateHelper {
 		switch (errorState) {
 			case BLE_NOT_SUPPORTED:
 				return "NSBNS";
-			case BLE_INTERNAL_ERROR:
-				return "NSBIR";
-			case BLE_ADVERTISING_ERROR:
-				return "NSBAE";
-			case BLE_SCANNER_ERROR:
-				return "NSBSE";
+			case GAEN_NOT_AVAILABLE:
+				return "GANA";
+			case GAEN_UNEXPECTEDLY_DISABLED:
+				return "GAUD";
 			case SYNC_ERROR_SERVER:
 				return "RTSES";
 			case SYNC_ERROR_NETWORK:
-				return "RTSEN";
+				return "RTSEN" + errorState.getErrorCode();
+			case SYNC_ERROR_API_EXCPETION:
+				return errorState.getErrorCode();
 			case SYNC_ERROR_SIGNATURE:
 				return "RTSESI";
 			case SYNC_ERROR_DATABASE:
 				return "RTSEDB";
 			case SYNC_ERROR_TIMING:
-			case MISSING_LOCATION_PERMISSION:
 			case LOCATION_SERVICE_DISABLED:
 			case BLE_DISABLED:
 			case BATTERY_OPTIMIZER_ENABLED:

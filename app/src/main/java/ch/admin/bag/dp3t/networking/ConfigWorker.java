@@ -92,6 +92,11 @@ public class ConfigWorker extends Worker {
 
 		ConfigResponseModel config = configRepository.getConfig(appVersion, osVersion, buildNumber);
 
+		DP3T.setMatchingParameters(context,
+				config.getSdkConfig().getLowerThreshold(), config.getSdkConfig().getHigherThreshold(),
+				config.getSdkConfig().getFactorLow(), config.getSdkConfig().getFactorHigh(),
+				config.getSdkConfig().getTriggerThreshold());
+
 		SecureStorage secureStorage = SecureStorage.getInstance(context);
 		secureStorage.setDoForceUpdate(config.getDoForceUpdate());
 
@@ -114,22 +119,6 @@ public class ConfigWorker extends Worker {
 		} else {
 			cancelNotification(context);
 		}
-
-		boolean forceTraceShutdown = config.getForceTraceShutdown();
-		if (forceTraceShutdown) {
-			if (DP3T.isStarted(context)) {
-				secureStorage.setForcedTraceShutdown(true);
-				DP3T.stop(context);
-			}
-		} else {
-			if (secureStorage.getForcedTraceShutdown() && !DP3T.isStarted(context)) {
-				DP3T.start(context);
-			}
-			secureStorage.setForcedTraceShutdown(false);
-		}
-
-		DP3T.setMatchingParameters(context, config.getSdkConfig().getContactAttenuationThreshold(),
-				config.getSdkConfig().getNumberOfWindowsForExposure());
 	}
 
 	private void showNotification(Context context) {
