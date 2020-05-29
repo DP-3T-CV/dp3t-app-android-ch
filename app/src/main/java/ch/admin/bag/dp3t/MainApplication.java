@@ -30,6 +30,8 @@ import org.dpppt.android.sdk.models.ApplicationInfo;
 import org.dpppt.android.sdk.models.ExposureDay;
 import org.dpppt.android.sdk.util.SignatureUtil;
 
+import java.security.PublicKey;
+
 import ch.admin.bag.dp3t.networking.CertificatePinning;
 import ch.admin.bag.dp3t.networking.FakeWorker;
 import ch.admin.bag.dp3t.storage.SecureStorage;
@@ -43,6 +45,8 @@ public class MainApplication extends Application {
 
 		if (BuildConfig.IS_DEV) {
 			BackendBucketRepository.BATCH_LENGTH = 5 * 60 * 1000L;
+			Logger.init(getApplicationContext(), LogLevel.DEBUG);
+		} else {
 			Logger.init(getApplicationContext(), LogLevel.DEBUG);
 		}
 

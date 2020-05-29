@@ -9,6 +9,7 @@
  */
 package ch.admin.bag.dp3t.contacts;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ import androidx.lifecycle.ViewModelProvider;
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.main.TracingBoxFragment;
 import ch.admin.bag.dp3t.main.views.HeaderView;
+import ch.admin.bag.dp3t.util.ENExceptionHelper;
 import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
 
 public class ContactsFragment extends Fragment {
@@ -80,18 +82,24 @@ public class ContactsFragment extends Fragment {
 	}
 
 	private void setupTracingView() {
+		Activity activity = requireActivity();
 
 		tracingSwitch.setOnClickListener(v -> {
 			if (tracingSwitch.isChecked()) {
-				tracingViewModel.enableTracing(getActivity(), () -> {
-					//ignore
-				}, (e) -> {
-					new AlertDialog.Builder(requireContext(), R.style.NextStep_AlertDialogStyle)
-							.setMessage(e.getLocalizedMessage())
-							.setPositiveButton(R.string.android_button_ok, (dialog, which) -> {})
-							.show();
-					tracingSwitch.setChecked(false);
-				}, () -> tracingSwitch.setChecked(false));
+				tracingViewModel.enableTracing(activity,
+						() -> {
+							// success, do nothing
+						},
+						(e) -> {
+							String message = ENExceptionHelper.getErrorMessage(e, activity);
+							new AlertDialog.Builder(requireContext(), R.style.NextStep_AlertDialogStyle)
+									.setTitle(R.string.android_en_start_failure)
+									.setMessage(message)
+									.setPositiveButton(R.string.android_button_ok, (dialog, which) -> {})
+									.show();
+							tracingSwitch.setChecked(false);
+						},
+						() -> tracingSwitch.setChecked(false));
 			} else {
 				tracingViewModel.disableTracing();
 			}

@@ -9,6 +9,7 @@
  */
 package ch.admin.bag.dp3t.onboarding;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,7 @@ import org.dpppt.android.sdk.GaenAvailability;
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.onboarding.util.PermissionButtonUtil;
 import ch.admin.bag.dp3t.util.DeviceFeatureHelper;
+import ch.admin.bag.dp3t.util.ENExceptionHelper;
 
 public class OnboardingGaenPermissionFragment extends Fragment {
 
@@ -94,34 +96,49 @@ public class OnboardingGaenPermissionFragment extends Fragment {
 	}
 
 	private void showPlayServicesUpdate(GaenAvailability availability) {
-		if (playServicesUpdateDialog != null) playServicesUpdateDialog.dismiss();
-		playServicesUpdateDialog = new AlertDialog.Builder(getContext(), R.style.NextStep_AlertDialogStyle)
+		Context context = getContext();
+		if (context == null) {
+			return;
+		}
+
+		if (playServicesUpdateDialog != null) {
+			playServicesUpdateDialog.dismiss();
+		}
+
+		playServicesUpdateDialog = new AlertDialog.Builder(context, R.style.NextStep_AlertDialogStyle)
 				.setTitle(R.string.playservices_title)
 				.setMessage(R.string.playservices_text)
 				.setPositiveButton(availability == GaenAvailability.UPDATE_REQUIRED ? R.string.playservices_update
 																					: R.string.playservices_install,
-						(dialog, which) -> DeviceFeatureHelper.openPlayServicesInPlayStore(getContext()))
+						(dialog, which) -> DeviceFeatureHelper.openPlayServicesInPlayStore(context))
 				.setCancelable(false)
 				.show();
 	}
 
 	private void activateGaen() {
+		OnboardingActivity activity = (OnboardingActivity) getActivity();
+		if (activity == null) {
+			return;
+		}
+
 		startedService = true;
-		DP3T.start(requireActivity(),
+		DP3T.start(activity,
 				() -> {
 					updateFragmentState(true);
-					((OnboardingActivity) requireActivity()).continueToNextPage();
+					activity.continueToNextPage();
 				},
 				(e) -> {
+					String message = ENExceptionHelper.getErrorMessage(e, activity);
 					new AlertDialog.Builder(requireContext(), R.style.NextStep_AlertDialogStyle)
-							.setMessage(e.getLocalizedMessage())
+							.setTitle(R.string.android_en_start_failure)
+							.setMessage(message)
 							.setPositiveButton(R.string.android_button_ok, (dialog, which) -> {})
 							.show();
 					updateFragmentState(false);
 				},
 				() -> {
 					updateFragmentState(false);
-					((OnboardingActivity) requireActivity()).continueToNextPage();
+					activity.continueToNextPage();
 				});
 	}
 
