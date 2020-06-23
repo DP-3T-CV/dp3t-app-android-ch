@@ -7,9 +7,9 @@
  *
  * SPDX-License-Identifier: MPL-2.0
  */
-package ch.admin.bag.dp3t.debug;
+package cv.nanosmon.app.dp3t.debug;
 
-import ch.admin.bag.dp3t.main.model.DefaultTracingStatusWrapper;
+import cv.nanosmon.app.dp3t.main.model.DefaultTracingStatusWrapper;
 
 public class TracingStatusWrapper extends DefaultTracingStatusWrapper {
 	// default implementation

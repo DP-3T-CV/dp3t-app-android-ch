@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: MPL-2.0
  */
-package ch.admin.bag.dp3t.debug;
+package cv.nanosmon.app.dp3t.debug;
 
 import android.content.res.ColorStateList;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
@@ -27,10 +28,10 @@ import org.dpppt.android.sdk.internal.ExposureDayStorage;
 import org.dpppt.android.sdk.models.DayDate;
 import org.dpppt.android.sdk.models.ExposureDay;
 
-import ch.admin.bag.dp3t.R;
-import ch.admin.bag.dp3t.debug.model.DebugAppState;
-import ch.admin.bag.dp3t.networking.CertificatePinning;
-import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
+import cv.nanosmon.app.dp3t.R;
+import cv.nanosmon.app.dp3t.debug.model.DebugAppState;
+import cv.nanosmon.app.dp3t.networking.CertificatePinning;
+import cv.nanosmon.app.dp3t.viewmodel.TracingViewModel;
 
 public class DebugFragment extends Fragment {
 

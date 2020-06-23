@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: MPL-2.0
  */
-package ch.admin.bag.dp3t.debug;
+package cv.nanosmon.app.dp3t.debug;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: MPL-2.0
  */
-package ch.admin.bag.dp3t.debug;
+package cv.nanosmon.app.dp3t.debug;
 
 import android.content.Context;
 
@@ -19,10 +19,10 @@ import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.models.DayDate;
 import org.dpppt.android.sdk.models.ExposureDay;
 
-import ch.admin.bag.dp3t.debug.model.DebugAppState;
-import ch.admin.bag.dp3t.main.model.DefaultTracingStatusWrapper;
-import ch.admin.bag.dp3t.main.model.NotificationState;
-import ch.admin.bag.dp3t.storage.SecureStorage;
+import cv.nanosmon.app.dp3t.debug.model.DebugAppState;
+import cv.nanosmon.app.dp3t.main.model.DefaultTracingStatusWrapper;
+import cv.nanosmon.app.dp3t.main.model.NotificationState;
+import cv.nanosmon.app.dp3t.storage.SecureStorage;
 
 public class TracingStatusWrapper extends DefaultTracingStatusWrapper {
 

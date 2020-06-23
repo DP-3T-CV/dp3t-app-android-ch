@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: MPL-2.0
  */
-package ch.admin.bag.dp3t.debug;
+package cv.nanosmon.app.dp3t.debug;
 
 import android.content.res.ColorStateList;
 import android.os.Bundle;
@@ -23,9 +23,9 @@ import androidx.lifecycle.ViewModelProvider;
 
 import org.dpppt.android.sdk.DP3T;
 
-import ch.admin.bag.dp3t.R;
-import ch.admin.bag.dp3t.networking.CertificatePinning;
-import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
+import cv.nanosmon.app.dp3t.R;
+import cv.nanosmon.app.dp3t.networking.CertificatePinning;
+import cv.nanosmon.app.dp3t.viewmodel.TracingViewModel;
 
 public class DebugFragment extends Fragment {
 

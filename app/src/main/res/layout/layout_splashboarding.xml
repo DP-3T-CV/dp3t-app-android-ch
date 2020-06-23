@@ -38,6 +38,7 @@
 		android:layout_height="wrap_content"
 		android:adjustViewBounds="true"
 		android:background="@color/white"
+		android:visibility="gone"
 		android:paddingStart="@dimen/spacing_very_large"
 		android:paddingTop="@dimen/spacing_large"
 		android:paddingEnd="@dimen/spacing_very_large"

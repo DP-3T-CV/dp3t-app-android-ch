@@ -26,7 +26,7 @@
 			android:layout_gravity="left"
 			android:adjustViewBounds="true"
 			android:scaleType="fitCenter"
-			android:src="@drawable/ic_schweiz_wappen" />
+			android:src="@drawable/ic_cv" />
 
 		<TextView
 			style="@style/NextStep.Text.Bold"
@@ -42,7 +42,7 @@
 		android:layout_height="match_parent"
 		android:background="@color/grey_light">
 
-		<ch.admin.bag.dp3t.main.views.HeaderView
+		<cv.nanosmon.app.dp3t.main.views.HeaderView
 			android:id="@+id/home_header_view"
 			android:layout_width="match_parent"
 			android:layout_height="@dimen/header_height" />
