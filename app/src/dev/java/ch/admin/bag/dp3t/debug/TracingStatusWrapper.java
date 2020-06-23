@@ -11,13 +11,13 @@ package cv.nanosmon.app.dp3t.debug;
 
 import android.content.Context;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.models.DayDate;
 import org.dpppt.android.sdk.models.ExposureDay;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 
 import cv.nanosmon.app.dp3t.debug.model.DebugAppState;
 import cv.nanosmon.app.dp3t.main.model.DefaultTracingStatusWrapper;
