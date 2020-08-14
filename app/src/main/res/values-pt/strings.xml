@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Ubique Innovation AG <https://www.ubique.ch>
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+  ~
+  ~ SPDX-License-Identifier: MPL-2.0
+  -->
+
 <resources>
 
     <!-- App Name -->
@@ -210,16 +220,16 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
     <string name="symptom_detail_title">"me sentir doente?"</string>
 
     <!-- Symptom Detail Weisse Box Subtitel -->
-    <string name="symptom_detail_box_subtitle">"Faça a..."</string>
+    <string name="symptom_detail_box_subtitle">"Em caso de sintomas da COVID-19..."</string>
 
     <!-- Symptom Detail Weisse Box Titel -->
-    <string name="symptom_detail_box_title">"avaliação do risco de infeção com COVID-19"</string>
+    <string name="symptom_detail_box_title">"Fazer o teste"</string>
 
     <!-- Symptom Detail Weisse Box Button -->
-    <string name="symptom_detail_box_button">"Ir para a avaliação do risco de infeção com COVID-19"</string>
+    <string name="symptom_detail_box_button">"Saber mais"</string>
 
     <!-- Symptom Detail Weisse Box Text -->
-    <string name="symptom_detail_box_text">"Fique em casa, faça avaliação do risco de infeção com COVID-19 ou ligue ao seu médico."</string>
+    <string name="symptom_detail_box_text">"O BAG recomenda que todas as pessoas com sintomas da COVID-19 façam o teste. Telefone a um médico ou a um estabelecimento de saúde."</string>
 
     <!-- Informieren Titel in NavigationBar/Toolbar -->
     <string name="inform_detail_navigation_title">"Teste positivo"</string>
@@ -535,7 +545,7 @@ Siga as instruções que recebeu relativamente ao isolamento."</string>
     <string name="accessibility_code_button_disabled_hint">"Não é possivel imprimir porque o código inserido não está completo."</string>
 
     <!-- Fehler: Standortinformationen / Bluetooth -->
-    <string name="android_foreground_service_notification_error_location_service">"Ative o acesso à localização para que a app possa usar o Bluetooth. A app nunca reconhece sozinha a sua localização."</string>
+    <string name="android_foreground_service_notification_error_location_service">"Nos dispositivos android, o Bluetooth requer o acesso à localização. É por isso que deve ativar a função de localização, mesmo quando a app não está a registar as suas coordenadas."</string>
 
     <!-- Location Services ausgeschaltet Titel -->
     <string name="android_error_location_services_title">"Localização desativada"</string>
@@ -644,7 +654,7 @@ Desta forma, outros utilizadores da app SwissCovid ficam a saber que existe a po
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
+    <string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/faq-kontakte-downloads/haeufig-gestellte-fragen.html?faq-url=/de/categories/swisscovid-app"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Aviso importante"</string>
@@ -656,12 +666,17 @@ Desta forma, outros utilizadores da app SwissCovid ficam a saber que existe a po
     <string name="inform_code_intro_button">"Entendi"</string>
 
     <!-- Symptome: FAQ Titel -->
-    <string name="symptom_faq1_title">"O que é a avaliação do risco de infeção com COVID-19?"</string>
+    <string name="symptom_faq1_title">"Quais são os sintomas da COVID-19?"</string>
 
     <!-- Symptome: FAQ Text -->
-    <string name="symptom_faq1_text">"Tem sintomas e não está seguro de como deve agir? 
+    <string name="symptom_faq1_text">"Estes sintomas são frequentes:
 
-Responda às perguntas da avaliação do risco de infeção com COVID-19 do Serviço Federal da Saúde Pública, disponível online, para receber uma recomendação."</string>
+- Febre, sensação de febre
+- Dores de garganta
+- Tosse (seca, na maioria dos casos)
+- Falta de ar
+- Dores musculares
+- Perda repentina do olfato e/ou do paladar"</string>
 
     <!-- Meldungen: Positiv getestet FAQ Titel -->
     <string name="meldungen_positive_tested_faq1_title">"Por que motivo terminou o rastreamento?"</string>
@@ -919,4 +934,43 @@ Schwarzenburgstrasse 157
     <!-- Google Translation! -->
     <!-- Meldungen: Fehler Meldung Rate-Limit (error 13) Text -->
     <string name="ratelimit_error_text">"Já hoje houve demasiadas perguntas. A aplicação irá tentar novamente mais tarde."</string>
+
+    <!-- Info to the user that tracing has been switched on -->
+    <string name="accessibility_tracing_has_been_activated">"Foi ativado o rastreamento"</string>
+
+    <!-- Info to the user that tracing has been switched off -->
+    <string name="accessibility_tracing_has_been_deactivated">"Foi desativado o rastreamento"</string>
+
+    <!-- Meldungen Detail Kostenloser Test Box Title -->
+    <string name="meldungen_detail_free_test_title">"Possibilidade de teste gratuito"</string>
+
+    <!-- Meldungen Detail Kostenloser Test Box Text -->
+    <string name="meldungen_detail_free_test_text">"A linha informativa SwissCovid aconselha-o sobre um possível teste gratuito ao coronavírus."</string>
+
+    <!-- Button title on the Home Screen when the Tracing is deactivated to directly activate it. -->
+    <string name="activate_tracing_button">"Ativar o rastreamento"</string>
+
+    <!-- Detailed Version of tracing_turned_off_text that is displayed to the user in the Tracing Detail View when the Tracing is deactivated. -->
+    <string name="tracing_turned_off_detailed_text">"Ative o rastreamento para que a app possa armazenar contactos e receber notificações."</string>
+
+    <!-- Warning that is displayed to the user in the Home View under the Meldungen-Card. -->
+    <string name="meldungen_tracing_not_active_warning">"Se o rastreamento estiver desativado, a app também não pode receber notificações."</string>
+
+    <!-- Warning title for Meldungen-Card when Tracing is turned off. -->
+    <string name="meldungen_tracing_turned_off_title">"Aviso"</string>
+
+    <!-- Data Protection Header String in Onboarding Disclaimer View. -->
+    <string name="onboarding_disclaimer_data_protection_statement">"Política de privacidade"</string>
+
+    <!-- Conditions of Use Header String in Onboarding Disclaimer View. -->
+    <string name="onboarding_disclaimer_conditions_of_use">"Termos de utilização"</string>
+
+    <!-- Button title that links to the website with the data protection statement and conditions of use. -->
+    <string name="onboarding_disclaimer_to_online_version_button">"Ir para a versão em linha"</string>
+
+    <!-- Hint that is displayed to the user under the Meldungen-Card when the Tracing is turned off. -->
+    <string name="meldungen_tracing_turned_off_warning">"Se o rastreamento estiver desativado, a app também não pode receber notificações."</string>
+
+    <!-- Homescreen infobox close button accessibility handler -->
+    <string name="infobox_close_button_accessibility">"Fechar"</string>
 </resources>

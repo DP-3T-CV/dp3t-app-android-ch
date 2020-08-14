@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Ubique Innovation AG <https://www.ubique.ch>
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+  ~
+  ~ SPDX-License-Identifier: MPL-2.0
+  -->
+
 <resources>
 
     <!-- App Name -->
@@ -209,16 +219,16 @@ Thank you for helping to break the chain of infection."</string>
     <string name="symptom_detail_title">"I feel ill?"</string>
 
     <!-- Symptom Detail Weisse Box Subtitel -->
-    <string name="symptom_detail_box_subtitle">"Do the …"</string>
+    <string name="symptom_detail_box_subtitle">"If you experience COVID-19 symptoms…"</string>
 
     <!-- Symptom Detail Weisse Box Titel -->
-    <string name="symptom_detail_box_title">"coronavirus check"</string>
+    <string name="symptom_detail_box_title">"Getting tested"</string>
 
     <!-- Symptom Detail Weisse Box Button -->
-    <string name="symptom_detail_box_button">"To the coronavirus check"</string>
+    <string name="symptom_detail_box_button">"More information"</string>
 
     <!-- Symptom Detail Weisse Box Text -->
-    <string name="symptom_detail_box_text">"Stay at home, do the coronavirus check, or call your doctor."</string>
+    <string name="symptom_detail_box_text">"The FOPH recommends that anyone with COVID-19 symptoms should get tested. Call your doctor or your healthcare facility to schedule an appointment."</string>
 
     <!-- Informieren Titel in NavigationBar/Toolbar -->
     <string name="inform_detail_navigation_title">"Tested positive"</string>
@@ -316,7 +326,7 @@ Infoline SwissCovid
     <string name="meldungen_detail_call_again_button">"Call again"</string>
 
     <!-- Meldungen Detail: Weisse Box Anruf Zeitpunkt -->
-    <string name="meldungen_detail_call_last_call">"Last call: (DATE)"</string>
+    <string name="meldungen_detail_call_last_call">"Last call: {DATE}"</string>
 
     <!-- Subtitel im Onboarding erste Seite -->
     <string name="app_subtitle">"Subtitle"</string>
@@ -343,7 +353,7 @@ Infoline SwissCovid
     <string name="onboarding_privacy_text1">"Devices only exchange random IDs. The app does not gather location data or data on your identity."</string>
 
     <!-- Onboarding Privacy: Text -->
-    <string name="onboarding_privacy_text2">"The random IDs are  stored on your device for 14 days and then deleted. "</string>
+    <string name="onboarding_privacy_text2">"The random IDs are stored on your device for 14 days and then deleted."</string>
 
     <!-- Onboarding Begegnungen: Titel oben -->
     <string name="onboarding_begegnungen_heading">"How does the app work?"</string>
@@ -533,7 +543,7 @@ Follow the instructions  you have received on isolation."</string>
 
     <!-- Fehler: Standortinformationen / Bluetooth -->
     <!-- Fuzzy -->
-    <string name="android_foreground_service_notification_error_location_service">"Enable location information so that the app can use Bluetooth. The app does not recognise your location at any time."</string>
+    <string name="android_foreground_service_notification_error_location_service">"On Android devices, Bluetooth depends on location sharing. This means the location function must be enabled even though the app never accesses your location."</string>
 
     <!-- Location Services ausgeschaltet Titel -->
     <!-- Fuzzy -->
@@ -626,7 +636,7 @@ The counselling is free of charge. You just have to pay for the call."</string>
     <string name="inform_detail_faq1_title">"What is a Covidcode?"</string>
 
     <!-- Inform Detail: FAQ Text -->
-    <string name="inform_detail_faq1_text">"People who have tested positive for the new coronavirus receive a Covidcode. This ensures that only confirmed cases are notified via the app. "</string>
+    <string name="inform_detail_faq1_text">"People who have tested positive for the new coronavirus receive a Covidcode. This ensures that only confirmed cases are notified via the app."</string>
 
     <!-- Not translated -->
     <!-- Inform Detail: FAQ Titel -->
@@ -641,22 +651,29 @@ Other SwissCovid apps can then check if it is possible that they have been infec
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
+    <string name="faq_button_url">"https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/faq-kontakte-downloads/haeufig-gestellte-fragen.html?faq-url=/en/categories/swisscovid-app"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Important information"</string>
 
     <!-- Informieren-Flow: Erster Screen Text -->
-    <string name="inform_code_intro_text">"Although no personal data relating to you is sent out, it may well be that someone remembers their encounter with you from the date. "</string>
+    <string name="inform_code_intro_text">"Although no personal data relating to you is sent out, it may well be that someone remembers their encounter with you from the date."</string>
 
     <!-- Inform-Flow: Erster Screen Button -->
     <string name="inform_code_intro_button">"OK"</string>
 
     <!-- Symptome: FAQ Titel -->
-    <string name="symptom_faq1_title">"What is the coronavirus check?"</string>
+    <string name="symptom_faq1_title">"What are the symptoms of COVID-19?"</string>
 
     <!-- Symptome: FAQ Text -->
-    <string name="symptom_faq1_text">"You have symptoms but are unsure what you should do? Answer the questions in the FOPH online check to receive advice on what to do."</string>
+    <string name="symptom_faq1_text">"These are the most common symptoms of COVID-19:
+
+- Fever, feverish feeling 
+- Sore throat
+- Cough (mostly dry)
+- Shortness of breath
+- Body aches
+- Sudden loss of the sense of taste and/or smell"</string>
 
     <!-- Meldungen: Positiv getestet FAQ Titel -->
     <string name="meldungen_positive_tested_faq1_title">"Why has proximity tracing ended?"</string>
@@ -858,7 +875,7 @@ If no update is currently available on your device, please try again later."</st
     <string name="oboarding_splashscreen_title">"SwissCovid 
 breaks 
 chains of infection."</string>
-    <string name="inform_detail_faq3_text">"Although no personal data relating to you is sent out, it may well be that someone remembers their encounter with you from the date. "</string>
+    <string name="inform_detail_faq3_text">"Although no personal data relating to you is sent out, it may well be that someone remembers their encounter with you from the date."</string>
     <string name="inform_detail_faq3_title">"Does anyone find out who I am?"</string>
 
     <!-- Meldung Detail Weiss Box unten -->
@@ -916,4 +933,43 @@ Schwarzenburgstrasse 157
     <!-- Google Translation! -->
     <!-- Meldungen: Fehler Meldung Rate-Limit (error 13) Text -->
     <string name="ratelimit_error_text">"There have already been too many requests today. The app will try again later."</string>
+
+    <!-- Info to the user that tracing has been switched on -->
+    <string name="accessibility_tracing_has_been_activated">"Tracing has been activated"</string>
+
+    <!-- Info to the user that tracing has been switched off -->
+    <string name="accessibility_tracing_has_been_deactivated">"Tracing has been deactivated"</string>
+
+    <!-- Meldungen Detail Kostenloser Test Box Title -->
+    <string name="meldungen_detail_free_test_title">"Test available free of charge"</string>
+
+    <!-- Meldungen Detail Kostenloser Test Box Text -->
+    <string name="meldungen_detail_free_test_text">"The SwissCovid infoline will advise you on the option of taking a test free of charge"</string>
+
+    <!-- Button title on the Home Screen when the Tracing is deactivated to directly activate it. -->
+    <string name="activate_tracing_button">"Activate proximity tracing"</string>
+
+    <!-- Detailed Version of tracing_turned_off_text that is displayed to the user in the Tracing Detail View when the Tracing is deactivated. -->
+    <string name="tracing_turned_off_detailed_text">"Enable tracing so the app can save encounters and receive reports"</string>
+
+    <!-- Warning that is displayed to the user in the Home View under the Meldungen-Card. -->
+    <string name="meldungen_tracing_not_active_warning">"If tracing is disabled, you cannot receive any reports."</string>
+
+    <!-- Warning title for Meldungen-Card when Tracing is turned off. -->
+    <string name="meldungen_tracing_turned_off_title">"Attention!"</string>
+
+    <!-- Data Protection Header String in Onboarding Disclaimer View. -->
+    <string name="onboarding_disclaimer_data_protection_statement">"Data protection declaration"</string>
+
+    <!-- Conditions of Use Header String in Onboarding Disclaimer View. -->
+    <string name="onboarding_disclaimer_conditions_of_use">"Terms of use"</string>
+
+    <!-- Button title that links to the website with the data protection statement and conditions of use. -->
+    <string name="onboarding_disclaimer_to_online_version_button">"To the online version"</string>
+
+    <!-- Hint that is displayed to the user under the Meldungen-Card when the Tracing is turned off. -->
+    <string name="meldungen_tracing_turned_off_warning">"If tracing is disabled, you cannot receive any reports"</string>
+
+    <!-- Homescreen infobox close button accessibility handler -->
+    <string name="infobox_close_button_accessibility">"Close"</string>
 </resources>

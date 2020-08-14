@@ -9,17 +9,12 @@
   -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="30dp"
-    android:height="30dp"
-    android:viewportWidth="30"
-    android:viewportHeight="30">
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
   <path
-      android:pathData="M15,15m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:pathData="M12.007,2.579l1.414,1.414L9.414,8l4.007,4.007 -1.414,1.414L8,9.414 3.993,13.42 2.58,12.007 6.586,8 2.579,3.993 3.993,2.58 8,6.586l4.007,-4.007z"
       android:fillColor="#FFF"
-      android:fillAlpha=".477"
-      android:fillType="evenOdd"/>
-  <path
-      android:pathData="M7,15.51L12.479,21 23,10.49 21.49,9 12.479,18 8.49,14.01z"
-      android:fillColor="#00BFA6"
       android:fillType="evenOdd"/>
 </vector>

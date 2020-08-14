@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Ubique Innovation AG <https://www.ubique.ch>
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at https://mozilla.org/MPL/2.0/.
+  ~
+  ~ SPDX-License-Identifier: MPL-2.0
+  -->
+
 <resources>
 
     <!-- App Name -->
@@ -209,16 +219,16 @@ Në këtë mënyrë na ndihmoni, për të ndaluar zinxhirin e infeksionit."</str
     <string name="symptom_detail_title">"ndihem i sëmurë?"</string>
 
     <!-- Symptom Detail Weisse Box Subtitel -->
-    <string name="symptom_detail_box_subtitle">"Bëni..."</string>
+    <string name="symptom_detail_box_subtitle">"Nëse keni simptoma të COVID-19..."</string>
 
     <!-- Symptom Detail Weisse Box Titel -->
-    <string name="symptom_detail_box_title">"Kontrolli i koronavirusit"</string>
+    <string name="symptom_detail_box_title">"Kryeni testin"</string>
 
     <!-- Symptom Detail Weisse Box Button -->
-    <string name="symptom_detail_box_button">"Për kontrollin e koronavirusit"</string>
+    <string name="symptom_detail_box_button">"Mëso më shumë"</string>
 
     <!-- Symptom Detail Weisse Box Text -->
-    <string name="symptom_detail_box_text">"Qëndroni në shtëpi, bëni kontrollin e koronavirusit ose telefononi mjeken ose mjekun tuaj."</string>
+    <string name="symptom_detail_box_text">"BAG rekomandon që të gjithë personat me simptoma të COVID-19 të kryejnë testimin. Telefononi një mjeke apo një mjek ose një institucion shëndetësor."</string>
 
     <!-- Informieren Titel in NavigationBar/Toolbar -->
     <string name="inform_detail_navigation_title">"Pozitiv në test"</string>
@@ -534,7 +544,7 @@ Respektoni udhëzimet e caktuara për izolimin."</string>
     <string name="accessibility_code_button_disabled_hint">"Printimi nuk është i mundur, sepse kodi nuk u fut në mënyrë të plotë."</string>
 
     <!-- Fehler: Standortinformationen / Bluetooth -->
-    <string name="android_foreground_service_notification_error_location_service">"Aktivizoni informacionin e vendndodhjes që aplikacioni të përdorë Bluetooth. Aplikacioni nuk e njeh në asnjë moment vendndodhjen tuaj."</string>
+    <string name="android_foreground_service_notification_error_location_service">"Te pajisjet Android, Bluetooth është i lidhur me autorizimin e vendndodhjes. Prandaj duhet aktivizuar funksioni i vendndodhjes, edhe nëse aplikacioni nuk akseson kurrë vendndodhjen tuaj."</string>
 
     <!-- Location Services ausgeschaltet Titel -->
     <string name="android_error_location_services_title">"Vendndodhja e fikur"</string>
@@ -643,7 +653,7 @@ Në këtë mënyrë mësoni përdoruesit e tjerë të alikacionit SwissCovid, t�
     <string name="infoline_tel_number">"+41 58 387 77 78"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/haeufig-gestellte-fragen.html"</string>
+    <string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/faq-kontakte-downloads/haeufig-gestellte-fragen.html?faq-url=/de/categories/swisscovid-app"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Udhëzim i rëndësishëm"</string>
@@ -655,12 +665,17 @@ Në këtë mënyrë mësoni përdoruesit e tjerë të alikacionit SwissCovid, t�
     <string name="inform_code_intro_button">"Kuptova"</string>
 
     <!-- Symptome: FAQ Titel -->
-    <string name="symptom_faq1_title">"Çfarë është kontrolli i koronavirusit?"</string>
+    <string name="symptom_faq1_title">"Çfarë simptomash ka COVID-19?"</string>
 
     <!-- Symptome: FAQ Text -->
-    <string name="symptom_faq1_text">"Keni simptoma dhe nuk jeni i sigurt se si duhet të silleni? 
+    <string name="symptom_faq1_text">"Simptomat më të shpeshta janë:
 
-Përgjigjuni pyetjeve në kontrollin online të BAG për një rekomandim të veprimit."</string>
+- Temperaturë, ndjesi ethesh
+- Dhimbje fyti
+- Kollë (zakonisht e thatë)
+- Vështirësi në frymëmarrje
+- Dhimbje muskujsh
+- Humbje e papritur e shqisës së nuhatjes dhe/ose të shijuarit"</string>
 
     <!-- Meldungen: Positiv getestet FAQ Titel -->
     <string name="meldungen_positive_tested_faq1_title">"Përse ka përfunduar gjurmimi?"</string>
@@ -919,4 +934,43 @@ Schwarzenburgstrasse 157
     <!-- Google Translation! -->
     <!-- Meldungen: Fehler Meldung Rate-Limit (error 13) Text -->
     <string name="ratelimit_error_text">"Shumë pyetje tashmë janë realizuar sot. Aplikacioni do të provojë përsëri më vonë."</string>
+
+    <!-- Info to the user that tracing has been switched on -->
+    <string name="accessibility_tracing_has_been_activated">"Gjurmimi u aktivizua"</string>
+
+    <!-- Info to the user that tracing has been switched off -->
+    <string name="accessibility_tracing_has_been_deactivated">"Gjurmimi u çaktivizua"</string>
+
+    <!-- Meldungen Detail Kostenloser Test Box Title -->
+    <string name="meldungen_detail_free_test_title">"Testi pa kosto është i mundur"</string>
+
+    <!-- Meldungen Detail Kostenloser Test Box Text -->
+    <string name="meldungen_detail_free_test_text">"Infoline SwissCovid ju këshillon për mundësinë e një testi falas për koronavirusin."</string>
+
+    <!-- Button title on the Home Screen when the Tracing is deactivated to directly activate it. -->
+    <string name="activate_tracing_button">"Aktivizo gjurmimin"</string>
+
+    <!-- Detailed Version of tracing_turned_off_text that is displayed to the user in the Tracing Detail View when the Tracing is deactivated. -->
+    <string name="tracing_turned_off_detailed_text">"Aktivizoni gjurmimin, në mënyrë që të ruhen përdorimet e aplikacionit dhe të merren njoftimet."</string>
+
+    <!-- Warning that is displayed to the user in the Home View under the Meldungen-Card. -->
+    <string name="meldungen_tracing_not_active_warning">"Nëse gjurmimi është i çaktivizuar, atëherë nuk mund të merret asnjë njoftim."</string>
+
+    <!-- Warning title for Meldungen-Card when Tracing is turned off. -->
+    <string name="meldungen_tracing_turned_off_title">"Këshillë"</string>
+
+    <!-- Data Protection Header String in Onboarding Disclaimer View. -->
+    <string name="onboarding_disclaimer_data_protection_statement">"Politika për privatësinë"</string>
+
+    <!-- Conditions of Use Header String in Onboarding Disclaimer View. -->
+    <string name="onboarding_disclaimer_conditions_of_use">"Kushtet e përdorimit"</string>
+
+    <!-- Button title that links to the website with the data protection statement and conditions of use. -->
+    <string name="onboarding_disclaimer_to_online_version_button">"Te versioni online"</string>
+
+    <!-- Hint that is displayed to the user under the Meldungen-Card when the Tracing is turned off. -->
+    <string name="meldungen_tracing_turned_off_warning">"Nëse gjurmimi është i çaktivizuar, atëherë nuk mund të merret asnjë njoftim."</string>
+
+    <!-- Homescreen infobox close button accessibility handler -->
+    <string name="infobox_close_button_accessibility">"Mbyll"</string>
 </resources>

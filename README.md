@@ -24,7 +24,7 @@ The app design, UX and implementation was done by [Ubique](https://www.ubique.ch
 
 This project is truly open-source and we welcome any feedback on the code regarding both the implementation and security aspects.
 
-Bugs or potential problems should be reported using Github issues. We welcome all pull requests that improve the quality the source code. Please note that the app will be available with approved translations in English, German, French, Italian, Romansh, Albanian, Bosnian, Croatian, Portuguese, Serbian and Spanish. Pull requests for additional translations currently won't be merged.
+Bugs or potential problems should be reported using Github issues. We welcome all pull requests that improve the quality of the source code. Please note that the app will be available with approved translations in English, German, French, Italian, Romansh, Albanian, Bosnian, Croatian, Portuguese, Serbian and Spanish. Pull requests for additional translations currently won't be merged.
 
 Platform independent UX and design discussions should be reported in [dp3t-ux-screenflows-ch](https://github.com/DP-3T/dp3t-ux-screenflows-ch)
 
@@ -40,6 +40,7 @@ Platform independent UX and design discussions should be reported in [dp3t-ux-sc
 ## Further Documentation
 The full set of documents for DP3T is at https://github.com/DP-3T/documents. Please refer to the technical documents and whitepapers for a description of the implementation.
 
+A description of the usage of the Google Exposure Notifcation API can be found [here](https://github.com/DP-3T/dp3t-sdk-android/blob/master/EXPOSURE_NOTIFICATION_API_USAGE.md).
 
 ## Installation and Building
 
