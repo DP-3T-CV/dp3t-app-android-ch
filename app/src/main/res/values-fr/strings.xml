@@ -244,7 +244,7 @@ Ainsi, vous contribuez à interrompre les chaînes de transmission."</string>
     <string name="bluetooth_permission_error_text">"Pour que le traçage de proximité fonctionne, autorisez l'utilisation de Bluetooth."</string>
 
     <!-- URL zum Corona Check -->
-    <string name="symptom_detail_corona_check_url">"https://check.bag-coronavirus.ch/screening"</string>
+    <string name="symptom_detail_corona_check_url">"https://covid19.cv/"</string>
     <string name="push_open_settings_button">"Modifier les paramètres"</string>
 
     <!-- Meldungen Detail: Subtitel wenn keine Meldungen -->
@@ -318,7 +318,7 @@ Ainsi, vous contribuez à interrompre les chaînes de transmission."</string>
     <string name="meldungen_detail_explanation_text2">"Protégez votre famille, vos amis et votre entourage. Évitez les contacts jusqu'à 10 jours suivant une possible infection."</string>
 
     <!-- Meldungen Detail: Weisse Box Text -->
-    <string name="meldungen_detail_guard_text">"En cas de questions, appelez l'infoline NaNosMon au +41 58 387 77 78"</string>
+    <string name="meldungen_detail_guard_text">"En cas de questions, appelez l'infoline NaNosMon au +238 800 11 12"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
     <string name="meldungen_detail_call_again_button">"Rappeler"</string>
@@ -628,7 +628,7 @@ La consultation est gratuite ; seuls les frais d'appel sont à votre charge."</s
     <string name="no_meldungen_box_link">"Voici comment nous protéger"</string>
 
     <!-- Keine Meldungen Weisse Box Link URL -->
-    <string name="no_meldungen_box_url">"https://ofsp-coronavirus.ch/"</string>
+    <string name="no_meldungen_box_url">"https://covid19.cv/""</string>
 
     <!-- Informieren Detail: FAQ Titel -->
     <string name="inform_detail_faq1_title">"Qu'est-ce qu'un code COVID ?"</string>
@@ -647,10 +647,10 @@ Cela permet d'assurer que seuls les cas confirmés sont signalés via l'applicat
 Ainsi, d'autres utilisateurs de l'application NaNosMon apprennent qu'ils ont peut-être été infectés."</string>
 
     <!-- Telefonnummer der Infoline -->
-    <string name="infoline_tel_number">"+41 58 387 77 78"</string>
+    <string name="infoline_tel_number">"+238 800 11 12"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/faq-kontakte-downloads/haeufig-gestellte-fragen.html?faq-url=/fr/categories/application-NaNosMon"</string>
+    <string name="faq_button_url">"https://covid19.cv/#faqs"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Avis important"</string>
@@ -799,7 +799,7 @@ Si aucune mise à jour n'est actuellement disponible sur votre appareil, veuille
     <string name="android_error_battery_optimization_button">"Autoriser"</string>
 
     <!-- Telefonnummer für Hilfe bei App-Problemen -->
-    <string name="app_hotline_tel_number">"+41 58 466 07 99"</string>
+    <string name="app_hotline_tel_number">"+238 800 11 12"</string>
 
     <!-- text shown in notification when we get an exception from the GAEN api -->
     <string name="sync_api_error">"Une erreur inattendue s'est produite lors de la synchronisation des messages."</string>
@@ -910,9 +910,9 @@ de transmission."</string>
     <string name="onboarding_disclaimer_warning_body">"L'application est destinée au traçage de proximité et à avertir les utilisateurs d'un contact potentiel avec une personne infectée par le COVID-19. Il ne s'agit pas non plus d'un outil de diagnostic. Veuillez lire attentivement les instructions qui apparaissent dans chaque fenêtre de l'application."</string>
 
     <!-- Onboarding Disclaimer Screen: Manufacturer Info -->
-    <string name="onboarding_disclaimer_manufacturer">"Office fédéral de la santé publique OFSP
-Schwarzenburgstrasse 157
-3097 Liebefeld, Suisse"</string>
+    <string name="onboarding_disclaimer_manufacturer">"Institut national de la santé publique
+Largo do Chã de Areia Assistance Catastrophe CP nº 719
+Praia - Cabo Verde"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
     <string name="onboarding_disclaimer_app_version">"NaNosMon App Version"</string>
@@ -924,7 +924,7 @@ Schwarzenburgstrasse 157
     <string name="onboarding_disclaimer_legal_button">"Déclaration de confidentialité &amp; condition d'utilisation"</string>
 
     <!-- onboarding privacy and conditions of use url -->
-    <string name="onboarding_disclaimer_legal_button_url">"https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international/datenschutzerklaerung-nutzungsbedingungen.html"</string>
+    <string name="onboarding_disclaimer_legal_button_url">"https://www.nanosmon.cv/index.php/privacy-policy"</string>
 
     <!-- Google Translation -->
     <!-- Error shown when loading fails because there is not enough free disk space. -->

@@ -244,7 +244,7 @@ Thank you for helping to break the chain of infection."</string>
     <string name="bluetooth_permission_error_text">"Enable the use of Bluetooth so that proximity tracing works."</string>
 
     <!-- URL zum Corona Check -->
-    <string name="symptom_detail_corona_check_url">"https://check.foph-coronavirus.ch/screening"</string>
+    <string name="symptom_detail_corona_check_url">"https://covid19.cv/"</string>
     <string name="push_open_settings_button">"Change settings"</string>
 
     <!-- Meldungen Detail: Subtitel wenn keine Meldungen -->
@@ -320,7 +320,7 @@ Thank you for helping to break the chain of infection."</string>
     <!-- Meldungen Detail: Weisse Box Text -->
     <string name="meldungen_detail_guard_text">"If you have any questions:
 Infoline NaNosMon
-+41 58 387 77 78"</string>
++238 800 11 12"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
     <string name="meldungen_detail_call_again_button">"Call again"</string>
@@ -630,7 +630,7 @@ The counselling is free of charge. You just have to pay for the call."</string>
     <string name="no_meldungen_box_link">"Protect yourself and others"</string>
 
     <!-- Keine Meldungen Weisse Box Link URL -->
-    <string name="no_meldungen_box_url">"https://www.foph-coronavirus.ch"</string>
+    <string name="no_meldungen_box_url">"https://covid19.cv/"</string>
 
     <!-- Informieren Detail: FAQ Titel -->
     <string name="inform_detail_faq1_title">"What is a Covidcode?"</string>
@@ -648,10 +648,10 @@ The counselling is free of charge. You just have to pay for the call."</string>
 Other NaNosMon apps can then check if it is possible that they have been infected."</string>
 
     <!-- Telefonnummer der Infoline -->
-    <string name="infoline_tel_number">"+41 58 387 77 78"</string>
+    <string name="infoline_tel_number">"+238 800 11 12"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/faq-kontakte-downloads/haeufig-gestellte-fragen.html?faq-url=/en/categories/NaNosMon-app"</string>
+    <string name="faq_button_url">"https://covid19.cv/#faqs"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Important information"</string>
@@ -797,7 +797,7 @@ If no update is currently available on your device, please try again later."</st
     <string name="android_error_battery_optimization_button">"Allow"</string>
 
     <!-- Telefonnummer für Hilfe bei App-Problemen -->
-    <string name="app_hotline_tel_number">"+41 58 466 07 99"</string>
+    <string name="app_hotline_tel_number">"+238 800 11 12"</string>
 
     <!-- text shown in notification when we get an exception from the GAEN api -->
     <string name="sync_api_error">"An unexpected error occurred when synchronising the notifications"</string>
@@ -903,9 +903,9 @@ chains of infection."</string>
     <string name="onboarding_disclaimer_warning_body">"The app is intended for proximity tracing and to warn users of potential exposure to someone infected by COVID-19. It is not a diagnostic tool either. Please read the instructions provided in each app screen carefully."</string>
 
     <!-- Onboarding Disclaimer Screen: Manufacturer Info -->
-    <string name="onboarding_disclaimer_manufacturer">"Federal Office of Public Health FOPH
-Schwarzenburgstrasse 157
-3097 Liebefeld, Switzerland"</string>
+    <string name="onboarding_disclaimer_manufacturer">"National Institute of Public Health
+Largo do Chã de Areia Assistance Disaster CP nº 719
+Praia - Cabo Verde"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
     <string name="onboarding_disclaimer_app_version">"NaNosMon App Version"</string>
@@ -917,7 +917,7 @@ Schwarzenburgstrasse 157
     <string name="onboarding_disclaimer_legal_button">"Data Protection Statement &amp; Conditions of Use"</string>
 
     <!-- onboarding privacy and conditions of use url -->
-    <string name="onboarding_disclaimer_legal_button_url">"https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international/datenschutzerklaerung-nutzungsbedingungen.html"</string>
+    <string name="onboarding_disclaimer_legal_button_url">"https://www.nanosmon.cv/index.php/privacy-policy"</string>
 
     <!-- Google Translation -->
     <!-- Error shown when loading fails because there is not enough free disk space. -->

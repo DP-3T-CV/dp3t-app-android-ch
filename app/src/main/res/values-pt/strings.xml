@@ -245,7 +245,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
     <string name="bluetooth_permission_error_text">"Permita a utilização do Bluetooth para que o rastreamento funcione."</string>
 
     <!-- URL zum Corona Check -->
-    <string name="symptom_detail_corona_check_url">"https://coronavirus.unisante.ch/pt-pt/evaluation"</string>
+    <string name="symptom_detail_corona_check_url">"https://covid19.cv/"</string>
     <string name="push_open_settings_button">"Alterar as definições"</string>
 
     <!-- Meldungen Detail: Subtitel wenn keine Meldungen -->
@@ -321,7 +321,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
     <!-- Meldungen Detail: Weisse Box Text -->
     <string name="meldungen_detail_guard_text">"Se tiver perguntas:
 linha informativa NaNosMon
-+41 58 387 77 78"</string>
++238 800 11 12"</string>
 
     <!-- Meldungen Detail Button Weisse Box -->
     <string name="meldungen_detail_call_again_button">"Ligar novamente"</string>
@@ -632,7 +632,7 @@ A chamada de aconselhamento é gratuita, apenas sujeita à tarifa normal."</stri
     <string name="no_meldungen_box_link">"Como nos protegemos"</string>
 
     <!-- Keine Meldungen Weisse Box Link URL -->
-    <string name="no_meldungen_box_url">"https://www.bag-coronavirus.ch"</string>
+    <string name="no_meldungen_box_url">"https://covid19.cv/"</string>
 
     <!-- Informieren Detail: FAQ Titel -->
     <string name="inform_detail_faq1_title">"O que é um código COVID?"</string>
@@ -651,10 +651,10 @@ Isto assegura que só os casos confirmados são assinalados na app."</string>
 Desta forma, outros utilizadores da app NaNosMon ficam a saber que existe a possibilidade de um contágio."</string>
 
     <!-- Telefonnummer der Infoline -->
-    <string name="infoline_tel_number">"+41 58 387 77 78"</string>
+    <string name="infoline_tel_number">"+238 800 11 12"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://www.bag.admin.ch/bag/de/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/faq-kontakte-downloads/haeufig-gestellte-fragen.html?faq-url=/de/categories/NaNosMon-app"</string>
+    <string name="faq_button_url">"https://covid19.cv/#faqs"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Aviso importante"</string>
@@ -800,7 +800,7 @@ Se não houver de momento nenhuma atualização disponível no seu dispositivo, 
     <string name="android_error_battery_optimization_button">"Permitir"</string>
 
     <!-- Telefonnummer für Hilfe bei App-Problemen -->
-    <string name="app_hotline_tel_number">"+41 58 466 07 99"</string>
+    <string name="app_hotline_tel_number">"+238 800 11 12"</string>
 
     <!-- text shown in notification when we get an exception from the GAEN api -->
     <string name="sync_api_error">"Ocorreu um erro inesperado na sincronização das mensagens."</string>
@@ -904,9 +904,9 @@ cadeias de transmissão."</string>
     <string name="onboarding_disclaimer_warning_body">"A app destina-se a rastrear contactos e advertir os utilizadores de um possível contacto com uma pessoa infetada com COVID-19. Também não se trata de uma ferramenta de diagnóstico. Leia cuidadosamente as instruções apresentadas em todos os ecrãs da app."</string>
 
     <!-- Onboarding Disclaimer Screen: Manufacturer Info -->
-    <string name="onboarding_disclaimer_manufacturer">"Bundesamt für Gesundheit BAG
-Schwarzenburgstrasse 157
-3097 Liebefeld, Schweiz"</string>
+    <string name="onboarding_disclaimer_manufacturer">"Instituto Nacional de Saúde Pública
+Largo do Desastre da Assistência Chã de Areia C.P. nº 719
+Praia - Cabo Verde"</string>
 
     <!-- Onboarding Disclaimer Screen: App version title -->
     <string name="onboarding_disclaimer_app_version">"NaNosMon App Version"</string>
@@ -918,7 +918,7 @@ Schwarzenburgstrasse 157
     <string name="onboarding_disclaimer_legal_button">"Política de privacidade &amp; termos de utilização"</string>
 
     <!-- onboarding privacy and conditions of use url -->
-    <string name="onboarding_disclaimer_legal_button_url">"https://www.bag.admin.ch/NaNosMon-datenschutzerklaerung-und-nutzungsbedingungen"</string>
+    <string name="onboarding_disclaimer_legal_button_url">"https://www.nanosmon.cv/index.php/privacy-policy"</string>
 
     <!-- Google Translation -->
     <!-- Error shown when loading fails because there is not enough free disk space. -->
