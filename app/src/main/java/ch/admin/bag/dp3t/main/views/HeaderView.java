@@ -50,7 +50,10 @@ public class HeaderView extends ConstraintLayout {
 	private static final int[] BACKGROUND_IMAGES =
 			new int[] { R.drawable.header_st,
 					R.drawable.header_sa,
-					R.drawable.header_sv};
+					R.drawable.header_sv,
+					R.drawable.header_sal,
+					R.drawable.header_fg
+			};
 	private static Integer backgroundImageIndex = null;
 
 	private ImageView backgroundImage;

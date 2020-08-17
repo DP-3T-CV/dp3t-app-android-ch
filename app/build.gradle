@@ -42,7 +42,7 @@ android {
 		targetSdkVersion 29
 		versionCode 10080
 		versionName "1.0.8"
-		resConfigs "en", "fr", "de", "it", "pt", "es", "sq", "bs", "hr", "sr", "rm", "tr", "ti"
+		resConfigs "en", "fr", "pt"
 
 		buildConfigField "long", "BUILD_TIME", readPropertyWithDefault('buildTimestamp', System.currentTimeMillis()) + 'L'
 
@@ -92,10 +92,10 @@ android {
 		}
 		prod {
 			buildConfigField 'boolean', 'DEV_HISTORY', 'false'
-			buildConfigField 'String', 'AUTH_CODE_URL', '"http://covidcodeservice.uniteltmais.cv/"'
-			buildConfigField 'String', 'CONFIG_URL', '"http://configbackend.uniteltmais.cv/"'
-			buildConfigField 'String', 'BUCKET_URL', '"http://backend.uniteltmais.cv/"'
-			buildConfigField 'String', 'REPORT_URL', '"http://backend.uniteltmais.cv/"'
+			buildConfigField 'String', 'AUTH_CODE_URL', '"https://covidcodeservice.nanosmon.cv/"'
+			buildConfigField 'String', 'CONFIG_URL', '"https://configbackend.nanosmon.cv/"'
+			buildConfigField 'String', 'BUCKET_URL', '"https://backend.nanosmon.cv/"'
+			buildConfigField 'String', 'REPORT_URL', '"https://backend.nanosmon.cv/"'
 			buildConfigField 'String', 'CONFIG_CERTIFICATE', "\"${project.backend_certs.prod.CONFIG_CERTIFICATE}\""
 			buildConfigField 'String', 'BUCKET_PUBLIC_KEY', "\"${project.backend_certs.prod.BUCKET_PUBLIC_KEY}\""
 		}
