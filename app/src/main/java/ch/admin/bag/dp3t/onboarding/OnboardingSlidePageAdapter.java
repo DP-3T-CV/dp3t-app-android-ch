@@ -30,7 +30,7 @@ public class OnboardingSlidePageAdapter extends FragmentStateAdapter {
 				return OnboardingContentFragment.newInstance(
 						R.string.onboarding_prinzip_title,
 						R.string.onboarding_prinzip_heading,
-						R.drawable.ill_prinzip,
+						R.drawable.ic_nanosmon_prinzip,
 						R.string.onboarding_prinzip_text1,
 						R.drawable.ic_nanosmon_finger_icon,
 						R.string.onboarding_prinzip_text2,
@@ -40,7 +40,7 @@ public class OnboardingSlidePageAdapter extends FragmentStateAdapter {
 				return OnboardingContentFragment.newInstance(
 						R.string.onboarding_privacy_title,
 						R.string.onboarding_privacy_heading,
-						R.drawable.ill_privacy,
+						R.drawable.ic_nanosmon_privacy,
 						R.string.onboarding_privacy_text1,
 						R.drawable.ic_key,
 						R.string.onboarding_privacy_text2,
@@ -50,7 +50,7 @@ public class OnboardingSlidePageAdapter extends FragmentStateAdapter {
 				return OnboardingContentFragment.newInstance(
 						R.string.onboarding_begegnungen_title,
 						R.string.onboarding_begegnungen_heading,
-						R.drawable.ill_bluetooth,
+						R.drawable.ic_nanosmon_bluetooth,
 						R.string.onboarding_begegnungen_text1,
 						R.drawable.ic_nanosmon_finger_icon,
 						R.string.onboarding_begegnungen_text2,
@@ -60,7 +60,7 @@ public class OnboardingSlidePageAdapter extends FragmentStateAdapter {
 				return OnboardingContentFragment.newInstance(
 						R.string.onboarding_meldung_title,
 						R.string.onboarding_meldung_heading,
-						R.drawable.ill_meldung,
+						R.drawable.ic_nanosmon_meldung,
 						R.string.onboarding_meldung_text1,
 						R.drawable.ic_message_alert,
 						R.string.onboarding_meldung_text2,

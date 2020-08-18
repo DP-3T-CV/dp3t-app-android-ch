@@ -348,7 +348,7 @@
 		<Button
 			android:id="@+id/onboarding_continue_button"
 			style="@style/NextStep.Button"
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:text="@string/onboarding_accept_button" />
 

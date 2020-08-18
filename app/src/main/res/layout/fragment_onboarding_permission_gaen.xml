@@ -31,7 +31,7 @@
 			android:paddingStart="@dimen/spacing_huge"
 			android:paddingEnd="@dimen/spacing_huge"
 			android:scaleType="fitCenter"
-			android:src="@drawable/ill_onboarding_gapple" />
+			android:src="@drawable/ic_nanosmon_onboarding_gapple" />
 
 		<TextView
 			android:id="@+id/onboarding_title"
