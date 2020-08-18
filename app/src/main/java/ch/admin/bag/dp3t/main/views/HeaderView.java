@@ -142,7 +142,7 @@ public class HeaderView extends ConstraintLayout {
 				}
 			} else {
 				if (state.getTracingState() == TracingState.ACTIVE) {
-					iconRes = R.drawable.ic_begegnungen;
+					iconRes = R.drawable.ic_nanosmon_finger_icon;
 					iconTintColor = R.color.white;
 					iconBgRes = R.drawable.bg_header_icon_on;
 					backgroundColor = getResources().getColor(R.color.header_bg_on, null);

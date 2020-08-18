@@ -67,7 +67,7 @@
 					android:layout_height="@dimen/icon_size"
 					android:layout_marginRight="@dimen/spacing_medium_large"
 					android:tint="@color/blue_main"
-					tools:src="@drawable/ic_begegnungen" />
+					tools:src="@drawable/ic_nanosmon_finger_icon" />
 
 				<TextView
 					android:id="@+id/onboarding_description_1"

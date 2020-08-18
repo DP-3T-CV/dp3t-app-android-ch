@@ -228,7 +228,7 @@ Ainsi, vous contribuez à interrompre les chaînes de transmission."</string>
     <string name="symptom_detail_box_button">"En savoir plus"</string>
 
     <!-- Symptom Detail Weisse Box Text -->
-    <string name="symptom_detail_box_text">"L'OFSP recommande à toutes les personnes qui présentent des symptômes du COVID-19 de se faire tester. Appelez un médecin ou une institution de santé."</string>
+    <string name="symptom_detail_box_text">"L' INSP recommande à toutes les personnes qui présentent des symptômes du COVID-19 de se faire tester. Appelez un médecin ou une institution de santé."</string>
 
     <!-- Informieren Titel in NavigationBar/Toolbar -->
     <string name="inform_detail_navigation_title">"Test positif"</string>
@@ -650,7 +650,7 @@ Ainsi, d'autres utilisateurs de l'application NaNosMon apprennent qu'ils ont peu
     <string name="infoline_tel_number">"+238 800 11 12"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://covid19.cv/#faqs"</string>
+    <string name="faq_button_url">"https://www.nanosmon.cv/index.php/faqs"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Avis important"</string>
@@ -824,7 +824,7 @@ Si aucune mise à jour n'est actuellement disponible sur votre appareil, veuille
     <string name="onboarding_legal_title">"A utiliser uniquement par les participants de la phase pilote"</string>
 
     <!-- Erster Onboarding-Screen für Pilot: Erster Abschnitt -->
-    <string name="onboarding_legal_text1">"L'utilisation de cette application est actuellement destinée et autorisée uniquement aux groupes suivants, qui ont été invités par l'OFSP à participer au projet pilote: Membres de l'armée suisse en formation, en assistance et en service actif, personnel des universités, personnel des hôpitaux et des cliniques, personnel des administrations cantonales et de l'administration fédérale, membres d'associations souhaitant contribuer à l'amélioration de la qualité du système."</string>
+    <string name="onboarding_legal_text1">"L'utilisation de cette application est actuellement destinée et autorisée uniquement aux groupes suivants, qui ont été invités par l' NaNosMon Équipe à participer au projet pilote: Membres de l'armée Cabo Verde en formation, en assistance et en service actif, personnel des universités, personnel des hôpitaux et des cliniques, personnel des administrations cantonales et de l'administration fédérale, membres d'associations souhaitant contribuer à l'amélioration de la qualité du système."</string>
 
     <!-- Erster Onboarding-Screen für Pilot: Zweiter Abschnitt -->
     <string name="onboarding_legal_text2">"La phase pilote est réalisée avec des systèmes productifs et contient des données réelles. En cas de test COVID-19 positif, les médecins cantonaux ne sont pas autorisés à générer un code covid pour la notification à partir de l'application pour les utilisateurs non autorisés. Les attaques (\"tests de pénétration\") sur le système en dehors du test de sécurité publique délimité sont des attaques sur le système productif et sont donc illégales."</string>
@@ -833,7 +833,7 @@ Si aucune mise à jour n'est actuellement disponible sur votre appareil, veuille
     <string name="onboarding_legal_alert_title">"Appartenez-vous à une organisation qui est autorisée à participer à la phase pilote ?"</string>
 
     <!-- Erster Onboarding-Screen für Pilot: Text von Popup in dem Nutzer Pilot bestätigen muss -->
-    <string name="onboarding_legal_alert_message">"Appartenez-vous à l'un des groupes suivants : Les membres de l'armée suisse en formation, en assistance et en service actif, les employés des universités, les employés des hôpitaux et des cliniques, les employés des administrations cantonales et de l'administration fédérale, les membres des associations qui souhaitent contribuer à l'amélioration de la qualité du système?"</string>
+    <string name="onboarding_legal_alert_message">"Appartenez-vous à l'un des groupes suivants : Les membres de l'armée Cabo Verde en formation, en assistance et en service actif, les employés des universités, les employés des hôpitaux et des cliniques, les employés des administrations cantonales et de l'administration fédérale, les membres des associations qui souhaitent contribuer à l'amélioration de la qualité du système?"</string>
 
     <!-- Erster Onboarding-Screen für Pilot: NEIN von Popup in dem Nutzer Pilot bestätigen muss -->
     <string name="onboarding_legal_alert_no">"Non"</string>

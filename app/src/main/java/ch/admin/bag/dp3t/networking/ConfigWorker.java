@@ -16,16 +16,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
+
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
-import androidx.work.*;
-
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+import androidx.work.Constraints;
+import androidx.work.ExistingPeriodicWorkPolicy;
+import androidx.work.NetworkType;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
+import androidx.work.Worker;
+import androidx.work.WorkerParameters;
 
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.backend.SignatureException;
 import org.dpppt.android.sdk.internal.logger.Logger;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.networking.errors.ResponseError;
@@ -133,7 +140,7 @@ public class ConfigWorker extends Worker {
 						.setContentTitle(context.getString(R.string.force_update_title))
 						.setContentText(context.getString(R.string.force_update_text))
 						.setPriority(NotificationCompat.PRIORITY_MAX)
-						.setSmallIcon(R.drawable.ic_begegnungen)
+						.setSmallIcon(R.drawable.ic_nanosmon_finger_icon)
 						.setContentIntent(pendingIntent)
 						.setAutoCancel(true)
 						.build();

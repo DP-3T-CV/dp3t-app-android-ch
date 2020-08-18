@@ -228,7 +228,7 @@ Thank you for helping to break the chain of infection."</string>
     <string name="symptom_detail_box_button">"More information"</string>
 
     <!-- Symptom Detail Weisse Box Text -->
-    <string name="symptom_detail_box_text">"The FOPH recommends that anyone with COVID-19 symptoms should get tested. Call your doctor or your healthcare facility to schedule an appointment."</string>
+    <string name="symptom_detail_box_text">"The INSP recommends that anyone with COVID-19 symptoms should get tested. Call your doctor or your healthcare facility to schedule an appointment."</string>
 
     <!-- Informieren Titel in NavigationBar/Toolbar -->
     <string name="inform_detail_navigation_title">"Tested positive"</string>
@@ -651,7 +651,7 @@ Other NaNosMon apps can then check if it is possible that they have been infecte
     <string name="infoline_tel_number">"+238 800 11 12"</string>
 
     <!-- URL für Häufige Fragen Button -->
-    <string name="faq_button_url">"https://covid19.cv/#faqs"</string>
+    <string name="faq_button_url">"https://www.nanosmon.cv/index.php/faqs"</string>
 
     <!-- Informieren Flow: Titel erster Screen -->
     <string name="inform_code_intro_title">"Important information"</string>
@@ -822,7 +822,7 @@ If no update is currently available on your device, please try again later."</st
     <string name="onboarding_legal_title">"Use only for participants of the pilot phase"</string>
 
     <!-- Erster Onboarding-Screen für Pilot: Erster Abschnitt -->
-    <string name="onboarding_legal_text1">"The use of this app is currently intended and authorised only for the following groups, who have been invited by the FOPH to take part in the pilot: Members of the Swiss Armed Forces in training, assistance and active service, staff of universities, staff of hospitals and clinics, staff of cantonal administrations and the Federal Administration, members of associations wishing to contribute to improving the quality of the system."</string>
+    <string name="onboarding_legal_text1">"The use of this app is currently intended and authorised only for the following groups, who have been invited by the NaNosMon Team to take part in the pilot: Members of the Cabo Verde Armed Forces in training, assistance and active service, staff of universities, staff of hospitals and clinics, staff of cantonal administrations and the Federal Administration, members of associations wishing to contribute to improving the quality of the system."</string>
 
     <!-- Erster Onboarding-Screen für Pilot: Zweiter Abschnitt -->
     <string name="onboarding_legal_text2">"The pilot phase is carried out with productive systems and contains real data. In case of a positive COVID-19 test, cantonal physicians are not allowed to generate a covid code for notification from the app for non-authorized users. Attacks (\"penetration tests\") on the system outside the delimited public security test are attacks on the productive system and are therefore illegal."</string>
@@ -831,7 +831,7 @@ If no update is currently available on your device, please try again later."</st
     <string name="onboarding_legal_alert_title">"Do you belong to an organization that is allowed to participate in the pilot phase?"</string>
 
     <!-- Erster Onboarding-Screen für Pilot: Text von Popup in dem Nutzer Pilot bestätigen muss -->
-    <string name="onboarding_legal_alert_message">"Do you belong to one of the following groups: Members of the Swiss Armed Forces in training, assistance and active service, employees of universities, employees of hospitals and clinics, employees of cantonal administrations and the Federal Administration, members of associations who wish to contribute to the quality improvement of the system?
+    <string name="onboarding_legal_alert_message">"Do you belong to one of the following groups: Members of the Cabo Verde Armed Forces in training, assistance and active service, employees of universities, employees of hospitals and clinics, employees of cantonal administrations and the Federal Administration, members of associations who wish to contribute to the quality improvement of the system?
 "</string>
 
     <!-- Erster Onboarding-Screen für Pilot: NEIN von Popup in dem Nutzer Pilot bestätigen muss -->

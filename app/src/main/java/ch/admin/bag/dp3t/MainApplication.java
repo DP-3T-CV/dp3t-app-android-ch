@@ -19,10 +19,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import androidx.core.app.NotificationCompat;
 
-import java.security.PublicKey;
-import java.util.concurrent.atomic.AtomicInteger;
+import androidx.core.app.NotificationCompat;
 
 import org.dpppt.android.sdk.DP3T;
 import org.dpppt.android.sdk.InfectionStatus;
@@ -32,6 +30,9 @@ import org.dpppt.android.sdk.internal.logger.Logger;
 import org.dpppt.android.sdk.models.ApplicationInfo;
 import org.dpppt.android.sdk.models.ExposureDay;
 import org.dpppt.android.sdk.util.SignatureUtil;
+
+import java.security.PublicKey;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import ch.admin.bag.dp3t.debug.DebugFragment;
 import ch.admin.bag.dp3t.networking.CertificatePinning;
@@ -145,7 +146,7 @@ public class MainApplication extends Application {
 						.setContentTitle(context.getString(R.string.push_exposed_title))
 						.setContentText(context.getString(R.string.push_exposed_text))
 						.setPriority(NotificationCompat.PRIORITY_MAX)
-						.setSmallIcon(R.drawable.ic_begegnungen)
+						.setSmallIcon(R.drawable.ic_nanosmon_finger_icon)
 						.setContentIntent(pendingIntent)
 						.setAutoCancel(true)
 						.build();

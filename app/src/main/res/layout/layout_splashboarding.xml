@@ -35,14 +35,14 @@
 	<ImageView
 		android:id="@+id/bottomImage"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
+		android:layout_height="120sp"
 		android:adjustViewBounds="true"
 		android:background="@color/white"
 		android:paddingStart="@dimen/spacing_very_large"
 		android:paddingTop="@dimen/spacing_large"
 		android:paddingEnd="@dimen/spacing_very_large"
 		android:paddingBottom="@dimen/spacing_large"
-		android:src="@drawable/onb_logo_bag_3x"
+		android:src="@drawable/ic_insp_logo"
 		app:layout_constraintBottom_toBottomOf="parent" />
 
 	<LinearLayout

@@ -137,7 +137,7 @@
 							android:layout_width="@dimen/icon_size"
 							android:layout_height="@dimen/icon_size"
 							android:layout_marginRight="@dimen/spacing_medium_large"
-							android:src="@drawable/ic_begegnungen"
+							android:src="@drawable/ic_nanosmon_finger_icon"
 							android:tint="@color/blue_main" />
 
 						<TextView

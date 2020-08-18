@@ -32,7 +32,7 @@ public class OnboardingSlidePageAdapter extends FragmentStateAdapter {
 						R.string.onboarding_prinzip_heading,
 						R.drawable.ill_prinzip,
 						R.string.onboarding_prinzip_text1,
-						R.drawable.ic_begegnungen,
+						R.drawable.ic_nanosmon_finger_icon,
 						R.string.onboarding_prinzip_text2,
 						R.drawable.ic_message_alert,
 						false);
@@ -52,7 +52,7 @@ public class OnboardingSlidePageAdapter extends FragmentStateAdapter {
 						R.string.onboarding_begegnungen_heading,
 						R.drawable.ill_bluetooth,
 						R.string.onboarding_begegnungen_text1,
-						R.drawable.ic_begegnungen,
+						R.drawable.ic_nanosmon_finger_icon,
 						R.string.onboarding_begegnungen_text2,
 						R.drawable.ic_bluetooth,
 						false);
