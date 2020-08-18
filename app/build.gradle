@@ -40,8 +40,8 @@ android {
 		applicationId "ch.admin.bag.dp3t"
 		minSdkVersion 23
 		targetSdkVersion 29
-		versionCode 10080
-		versionName "1.0.8"
+		versionCode 1
+		versionName "1.0.0"
 		resConfigs "en", "fr", "pt"
 
 		buildConfigField "long", "BUILD_TIME", readPropertyWithDefault('buildTimestamp', System.currentTimeMillis()) + 'L'

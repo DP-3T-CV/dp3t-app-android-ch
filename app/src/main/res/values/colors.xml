@@ -19,7 +19,7 @@
 	<color name="purple_main">#8D6A9F</color>
 	<color name="green_main">#009e89</color>
 	<color name="red_main">#114373</color>
-	<color name="blue_main">#5094bf</color>
+	<color name="blue_main">#114373</color>
 	<color name="blue_main_light">#805094bf</color>
 
 	<color name="navigation_selected">@color/red_main</color>
@@ -50,7 +50,7 @@
 
 	<color name="header_bg_error">#B2E20008</color>
 	<color name="header_bg_off">#B24A4969</color>
-	<color name="header_bg_on">#B25094bf</color>
+	<color name="header_bg_on">#B2114373</color>
 	<color name="header_bg_exposed">#B28D6A9F</color>
 
 	<color name="bag_blue">#07A0E2</color>

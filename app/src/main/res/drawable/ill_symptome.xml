@@ -72,7 +72,7 @@
   <path
       android:pathData="M35.602,66.817L35.602,66.817C34.671,67.242 33.595,67.203 32.696,66.714C31.798,66.224 31.182,65.34 31.034,64.327L30.197,58.596L33.124,57.02L36.838,61.882C37.439,62.669 37.649,63.687 37.409,64.647C37.168,65.608 36.503,66.407 35.602,66.817L35.602,66.817Z"
       android:strokeWidth="1"
-      android:fillColor="#FFB9B9"
+      android:fillColor="#9e5d6a"
       android:fillType="nonZero"
       android:strokeColor="#00000000"/>
   <path
@@ -84,7 +84,7 @@
   <path
       android:pathData="M35.239,19.343L35.239,19.343C36.082,18.763 37.149,18.614 38.119,18.94C39.089,19.266 39.849,20.03 40.171,21.002L41.99,26.501L39.382,28.561L34.879,24.417C34.15,23.747 33.767,22.781 33.837,21.793C33.907,20.806 34.423,19.904 35.239,19.343L35.239,19.343Z"
       android:strokeWidth="1"
-      android:fillColor="#FFC4C4"
+      android:fillColor="#9e5d6a"
       android:fillType="nonZero"
       android:strokeColor="#00000000"/>
   <path
