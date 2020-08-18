@@ -22,8 +22,8 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_gravity="center_horizontal"
-			android:layout_marginTop="@dimen/spacing_enormous"
-			android:src="@drawable/ill_gute_besserung" />
+			android:layout_marginTop="@dimen/spacing_huge"
+			android:src="@drawable/ic_nanosmon_gute_besserung" />
 
 		<TextView
 			style="@style/NextStep.Text.Title"

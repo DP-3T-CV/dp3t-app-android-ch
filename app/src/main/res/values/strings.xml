@@ -872,9 +872,7 @@ If no update is currently available on your device, please try again later."</st
     <string name="tracing_active_tracking_always_info">"NaNosMon remains active even if the app has been closed."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"NaNosMon 
-breaks 
-chains of infection."</string>
+    <string name="oboarding_splashscreen_title">"NaNosMon breaks chains of infection."</string>
     <string name="inform_detail_faq3_text">"Although no personal data relating to you is sent out, it may well be that someone remembers their encounter with you from the date."</string>
     <string name="inform_detail_faq3_title">"Does anyone find out who I am?"</string>
 

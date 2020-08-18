@@ -52,7 +52,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="@dimen/spacing_large"
-				android:src="@drawable/ill_symptome_detail" />
+				android:src="@drawable/ic_nanosmon_symptome" />
 
 			<androidx.cardview.widget.CardView
 				style="@style/NextStep.Card"

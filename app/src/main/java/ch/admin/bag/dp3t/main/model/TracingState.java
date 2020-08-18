@@ -89,9 +89,9 @@ public enum TracingState {
 	public static int getIllu(TracingState state) {
 		switch (state) {
 			case ACTIVE:
-				return R.drawable.ill_tracking_active;
+				return R.drawable.ic_nanosmon_tracking_active;
 			case ENDED:
-				return R.drawable.ic_illu_tracing_ended;
+				return R.drawable.ic_nanosmon_tracing_ended;
 			case NOT_ACTIVE:
 			default:
 				return -1;

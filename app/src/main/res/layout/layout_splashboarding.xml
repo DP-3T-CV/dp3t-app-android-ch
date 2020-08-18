@@ -12,8 +12,8 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:background="@color/bag_blue">
+	android:background="@color/white"
+	android:layout_height="match_parent">
 
 	<LinearLayout
 		android:id="@+id/linearLayout"
@@ -53,18 +53,21 @@
 		app:layout_constraintBottom_toTopOf="@id/bottomImage"
 		app:layout_constraintTop_toBottomOf="@id/linearLayout">
 
-		<TextView
-			style="@style/NextStep.Text.SplashTitle"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:gravity="center"
-			android:text="@string/oboarding_splashscreen_title" />
 
 		<ImageView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:scaleType="centerInside"
-			android:src="@drawable/onb_pikto" />
+			android:src="@drawable/ic_nanosmon_splash_logo" />
+
+		<TextView
+			style="@style/NextStep.Text.SplashTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:gravity="center"
+			android:textColor="@color/colorAccent"
+			android:text="@string/oboarding_splashscreen_title" />
 
 	</LinearLayout>
 

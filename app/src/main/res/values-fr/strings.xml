@@ -879,9 +879,7 @@ Si aucune mise à jour n'est actuellement disponible sur votre appareil, veuille
     <string name="tracing_active_tracking_always_info">"NaNosMon reste active, même lorsque l'application est fermée."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"NaNosMon 
-stoppe les chaînes 
-de transmission."</string>
+    <string name="oboarding_splashscreen_title">"NaNosMon stoppe les chaînes de transmission."</string>
     <string name="inform_detail_faq3_text">"Même si aucune donnée personnelle n'est envoyée sur vous, il est possible que quelqu'un se souvienne du contact sur la base de la date."</string>
     <string name="inform_detail_faq3_title">"Est-ce que je reste anonyme ?"</string>
 

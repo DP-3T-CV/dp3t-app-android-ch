@@ -51,7 +51,15 @@ public class HeaderView extends ConstraintLayout {
 			new int[] { R.drawable.header_st,
 					R.drawable.header_sa,
 					R.drawable.header_sv,
-					R.drawable.header_sal,
+					R.drawable.header_st,
+					R.drawable.header_st2,
+					R.drawable.header_st3,
+					R.drawable.header_sn,
+					R.drawable.header_sl,
+					R.drawable.header_ma,
+					R.drawable.header_br,
+					R.drawable.header_bv,
+					R.drawable.header_bv2,
 					R.drawable.header_fg
 			};
 	private static Integer backgroundImageIndex = null;
@@ -153,6 +161,7 @@ public class HeaderView extends ConstraintLayout {
 				}
 			}
 		} else if (state.getNotificationState() == NotificationState.POSITIVE_TESTED) {
+			iconRes = R.drawable.ic_nanosmon_icon_exposed_posit_test;
 			backgroundColor = getResources().getColor(R.color.header_bg_exposed, null);
 		} else {
 			throw new IllegalStateException(

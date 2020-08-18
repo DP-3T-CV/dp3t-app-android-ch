@@ -18,6 +18,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_gravity="bottom"
+		app:cardCornerRadius="4dp"
 		android:layout_marginTop="@dimen/card_what_to_do_ill_margin"
 		android:elevation="@dimen/card_elevation">
 
@@ -75,6 +76,6 @@
 		android:layout_marginStart="@dimen/spacing_large"
 		android:layout_marginBottom="@dimen/spacing_medium"
 		android:elevation="@dimen/card_elevation"
-		android:src="@drawable/ill_symptome" />
+		android:src="@drawable/ic_nanosmon_symptome" />
 
 </FrameLayout>

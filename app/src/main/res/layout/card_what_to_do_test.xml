@@ -10,10 +10,12 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="wrap_content">
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
 
 	<androidx.cardview.widget.CardView
 		style="@style/NextStep.Card"
+		app:cardCornerRadius="4dp"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:layout_gravity="bottom"
@@ -74,6 +76,6 @@
 		android:layout_marginStart="@dimen/spacing_large"
 		android:layout_marginBottom="@dimen/spacing_medium"
 		android:elevation="@dimen/card_elevation"
-		android:src="@drawable/ill_positiv_getestet" />
+		android:src="@drawable/ic_nanosmon_positiv_getestet" />
 
 </FrameLayout>

@@ -873,9 +873,7 @@ Se não houver de momento nenhuma atualização disponível no seu dispositivo, 
     <string name="tracing_active_tracking_always_info">"A NaNosMon mantém-se ativa, mesmo quando a app é desligada."</string>
 
     <!-- title in splash screen of onboarding -->
-    <string name="oboarding_splashscreen_title">"A NaNosMon 
-trava as 
-cadeias de transmissão."</string>
+    <string name="oboarding_splashscreen_title">"A NaNosMon trava as cadeias de transmissão."</string>
     <string name="inform_detail_faq3_text">"Embora não sejam enviados dados pessoais seus, é possível que alguém se recorde de um contacto consigo pela data."</string>
     <string name="inform_detail_faq3_title">"Permaneço anónimo?"</string>
 
