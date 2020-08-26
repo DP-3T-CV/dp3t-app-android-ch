@@ -17,6 +17,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
@@ -24,13 +25,17 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
-import ch.admin.bag.dp3t.util.AssetUtil;
 import ch.admin.bag.dp3t.R;
-
+import ch.admin.bag.dp3t.util.AssetUtil;
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.schedulers.Schedulers;
@@ -118,11 +123,13 @@ public class HtmlFragment extends Fragment {
 
 		WebSettings webSettings = web.getSettings();
 		webSettings.setJavaScriptEnabled(true);
+
 		if (data != null) {
 			web.loadDataWithBaseURL(baseUrl, data, "text/html", "UTF-8", null);
 		} else {
 			web.loadUrl(baseUrl);
 		}
+
 	}
 
 	private void openFileFromUrl(final String xlsUrl, String fileIntentType) {

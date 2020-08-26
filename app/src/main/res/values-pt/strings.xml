@@ -44,7 +44,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
     <string name="inform_fertig_button_title">"Fechar"</string>
 
     <!-- Titel auf Homescreen für Begegnungen -->
-    <string name="handshakes_title_homescreen">"Contactos"</string>
+    <string name="handshakes_title_homescreen">"Encontros"</string>
 
     <!-- Abbrechen -->
     <string name="cancel">"Cancelar"</string>
@@ -118,10 +118,10 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
 "</string>
 
     <!-- Titel ob Tracing aktiv -->
-    <string name="tracing_active_title">"App ativa"</string>
+    <string name="tracing_active_title">"Rastreamento ativado"</string>
 
     <!-- Text bei Tracing aktiv -->
-    <string name="tracing_active_text">"Os contatos serão guardados de forma anónima"</string>
+    <string name="tracing_active_text">"Os encontros serão guardados de forma anónima"</string>
 
     <!-- Android: Fehler Text bei Tracing -->
     <string name="android_tracing_error_title">"Rastreamento inativo"</string>
@@ -236,7 +236,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
 
     <!-- Symptome Detail: NavigationBar/Toolbar Titel -->
     <string name="symptom_detail_navigation_title">"Sintomas"</string>
-    <string name="tracing_turned_off_title">"Rastreamento desativado"</string>
+    <string name="tracing_turned_off_title">"Rastreamento Ativo"</string>
     <string name="tracing_turned_off_text">"Ative o rastreamento para que a app funcione."</string>
     <string name="bluetooth_turned_off_title">"Bluetooth desligado"</string>
     <string name="bluetooth_turned_off_text">"Ligue o Bluetooth no seu dispositivo para que o rastreamento funcione."</string>
@@ -275,7 +275,7 @@ Obrigado por ajudar a travar as cadeias de transmissão."</string>
     <!-- Meldung Detail Positiv Getestet Weisse Box Text -->
     <string name="meldung_detail_positive_test_box_text">"Siga as instruções que recebeu relativamente ao isolamento"</string>
     <string name="tracing_ended_title">"Rastreamento terminado"</string>
-    <string name="tracing_ended_text">"Não serão guardados mais contactos."</string>
+    <string name="tracing_ended_text">"Não serão guardados mais encontros."</string>
     <string name="exposed_info_contact_hotline">"Contacte o/a"</string>
     <string name="meldung_homescreen_positive_info_line1">"Siga o/a"</string>
     <string name="meldung_homescreen_positive_info_line2">"As instruções relativas ao auto-isolamento"</string>
@@ -361,7 +361,7 @@ linha informativa NaNosMon
     <string name="onboarding_begegnungen_heading">"Como funciona a app?"</string>
 
     <!-- Onboarding Begegnungen: Titel -->
-    <string name="onboarding_begegnungen_title">"Deteta contactos através do Bluetooth
+    <string name="onboarding_begegnungen_title">"Deteta encontros através do Bluetooth
 "</string>
 
     <!-- Onboarding Begegnungen: Text -->
@@ -605,7 +605,7 @@ Em caso de possível contágio, receberá uma notificação no ecrã de bloqueio
     <string name="meldungen_nomeldungen_faq2_titel">"O que significa um possível contágio?"</string>
 
     <!-- Meldungen: Keine Meldungen FAQ Text -->
-    <string name="meldungen_nomeldungen_faq2_text">"A app não só verifica se houve contactos com pessoas infetadas, mas também quanto tempo e quão perto esteve dessas pessoas. 
+    <string name="meldungen_nomeldungen_faq2_text">"A app não só verifica se houve encontros com pessoas infetadas, mas também quanto tempo e quão perto esteve dessas pessoas.
 
 Só será notificado se houver uma probabilidade razoável de contágio."</string>
 
@@ -754,7 +754,7 @@ Desta forma, outros utilizadores da app NaNosMon ficam a saber que existe a poss
     <!-- Meldung im Löschen Dialog nach Code-Einfragen -->
     <string name="delete_infection_dialog">"Pretende apagar a notificação?"</string>
     <string name="android_onboarding_battery_permission_title">"Ignorar otimização da bateria"</string>
-    <string name="android_onboarding_battery_permission_text">"A função de otimização da bateria tem de ser desligada para esta app para que ela possa detetar contactos em qualquer altura."</string>
+    <string name="android_onboarding_battery_permission_text">"A função de otimização da bateria tem de ser desligada para esta app para que ela possa detetar encontros em qualquer altura."</string>
     <string name="android_onboarding_battery_permission_button">"Permitir"</string>
     <string name="android_onboarding_battery_permission_button_deactivated">"OK"</string>
     <string name="android_onboarding_battery_permission_info_1_title">"Só para esta app"</string>
@@ -899,7 +899,7 @@ Se não houver de momento nenhuma atualização disponível no seu dispositivo, 
     <string name="onboarding_disclaimer_warning_title">"Aviso: Esta app não o protege de uma infeção com COVID-19."</string>
 
     <!-- Onboarding Disclaimer Screen: Warning Text -->
-    <string name="onboarding_disclaimer_warning_body">"A app destina-se a rastrear contactos e advertir os utilizadores de um possível contacto com uma pessoa infetada com COVID-19. Também não se trata de uma ferramenta de diagnóstico. Leia cuidadosamente as instruções apresentadas em todos os ecrãs da app."</string>
+    <string name="onboarding_disclaimer_warning_body">"A app destina-se a rastrear encontros e advertir os utilizadores de um possível encontro com uma pessoa infetada com COVID-19. Também não se trata de uma ferramenta de diagnóstico. Leia cuidadosamente as instruções apresentadas em todos os ecrãs da app."</string>
 
     <!-- Onboarding Disclaimer Screen: Manufacturer Info -->
     <string name="onboarding_disclaimer_manufacturer">"Instituto Nacional de Saúde Pública
@@ -949,7 +949,7 @@ Praia - Cabo Verde"</string>
     <string name="activate_tracing_button">"Ativar o rastreamento"</string>
 
     <!-- Detailed Version of tracing_turned_off_text that is displayed to the user in the Tracing Detail View when the Tracing is deactivated. -->
-    <string name="tracing_turned_off_detailed_text">"Ative o rastreamento para que a app possa armazenar contactos e receber notificações."</string>
+    <string name="tracing_turned_off_detailed_text">"Ative o rastreamento para que a app possa armazenar encontros e receber notificações."</string>
 
     <!-- Warning that is displayed to the user in the Home View under the Meldungen-Card. -->
     <string name="meldungen_tracing_not_active_warning">"Se o rastreamento estiver desativado, a app também não pode receber notificações."</string>

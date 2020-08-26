@@ -10,5 +10,8 @@
   -->
 
 <network-security-config>
-	<!-- use default system config -->
+	<domain-config cleartextTrafficPermitted="true">
+		<domain includeSubdomains="true">nanosmon.cv</domain>
+		<domain includeSubdomains="true">uniteltmais.cv</domain>
+	</domain-config>
 </network-security-config>
