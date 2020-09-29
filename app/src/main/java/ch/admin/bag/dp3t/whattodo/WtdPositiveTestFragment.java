@@ -20,6 +20,8 @@ import androidx.fragment.app.Fragment;
 
 import ch.admin.bag.dp3t.R;
 import ch.admin.bag.dp3t.inform.InformActivity;
+import ch.admin.bag.dp3t.util.PhoneUtil;
+import ch.admin.bag.dp3t.util.UrlUtil;
 
 public class WtdPositiveTestFragment extends Fragment {
 
@@ -42,8 +44,11 @@ public class WtdPositiveTestFragment extends Fragment {
 		});
 
 		view.findViewById(R.id.wtd_inform_faq_button).setOnClickListener(v -> {
-			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url)));
-			startActivity(browserIntent);
+			UrlUtil.openUrl(getContext(), getString(R.string.faq_button_url));
+		});
+
+		view.findViewById(R.id.wtd_inform_call_infoline_coronavirus).setOnClickListener(v->{
+			PhoneUtil.callInfolineCoronavirus(v.getContext());
 		});
 
 	}

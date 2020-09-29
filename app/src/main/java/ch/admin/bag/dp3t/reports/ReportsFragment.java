@@ -12,9 +12,7 @@ package ch.admin.bag.dp3t.reports;
 import android.app.AlertDialog;
 import android.app.NotificationManager;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Rect;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
@@ -41,11 +39,12 @@ import java.util.TimeZone;
 import org.dpppt.android.sdk.models.ExposureDay;
 
 import ch.admin.bag.dp3t.R;
-import ch.admin.bag.dp3t.main.model.TracingStatusInterface;
+import ch.admin.bag.dp3t.home.model.TracingStatusInterface;
 import ch.admin.bag.dp3t.storage.SecureStorage;
 import ch.admin.bag.dp3t.util.DateUtils;
 import ch.admin.bag.dp3t.util.NotificationUtil;
 import ch.admin.bag.dp3t.util.PhoneUtil;
+import ch.admin.bag.dp3t.util.UrlUtil;
 import ch.admin.bag.dp3t.viewmodel.TracingViewModel;
 
 public class ReportsFragment extends Fragment {
@@ -54,6 +53,7 @@ public class ReportsFragment extends Fragment {
 		return new ReportsFragment();
 	}
 
+	private final int DAYS_TO_STAY_IN_QUARANTINE = 10;
 	private TracingViewModel tracingViewModel;
 	private SecureStorage secureStorage;
 
@@ -71,6 +71,9 @@ public class ReportsFragment extends Fragment {
 
 	private TextView callHotlineLastText1;
 	private TextView callHotlineLastText2;
+
+	private TextView xDaysLeftTextview;
+
 
 	private boolean hotlineJustCalled = false;
 
@@ -103,6 +106,7 @@ public class ReportsFragment extends Fragment {
 
 		callHotlineLastText1 = hotlineView.findViewById(R.id.card_encounters_last_call);
 		callHotlineLastText2 = saveOthersView.findViewById(R.id.card_encounters_last_call);
+		xDaysLeftTextview = saveOthersView.findViewById(R.id.x_days_left_textview);
 
 		Button callHotlineButton1 = hotlineView.findViewById(R.id.card_encounters_button);
 		Button callHotlineButton2 = saveOthersView.findViewById(R.id.card_encounters_button);
@@ -172,8 +176,18 @@ public class ReportsFragment extends Fragment {
 					}
 				}
 
+				int daysLeft = DAYS_TO_STAY_IN_QUARANTINE - (int) tracingStatusInterface.getDaysSinceExposure();
+				if (daysLeft > DAYS_TO_STAY_IN_QUARANTINE || daysLeft <= 0) {
+					xDaysLeftTextview.setVisibility(View.GONE);
+				} else if (daysLeft == 1) {
+					xDaysLeftTextview.setText(R.string.date_in_one_day);
+				} else {
+					xDaysLeftTextview.setText(getString(R.string.date_in_days).replace("{COUNT}", String.valueOf(daysLeft)));
+				}
+
 				hotlineView.findViewById(R.id.delete_reports).setOnClickListener(v -> deleteNotifications(tracingStatusInterface));
-				saveOthersView.findViewById(R.id.delete_reports).setOnClickListener(v -> deleteNotifications(tracingStatusInterface));
+				saveOthersView.findViewById(R.id.delete_reports)
+						.setOnClickListener(v -> deleteNotifications(tracingStatusInterface));
 			} else {
 				healthyView.setVisibility(View.VISIBLE);
 				items.add(new Pair<>(ReportsPagerFragment.Type.NO_REPORTS, null));
@@ -202,13 +216,11 @@ public class ReportsFragment extends Fragment {
 	}
 
 	private void openLink(@StringRes int stringRes) {
-		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(stringRes)));
-		startActivity(browserIntent);
+		UrlUtil.openUrl(getContext(), getString(stringRes));
 	}
 
 	private void showFaq() {
-		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.faq_button_url)));
-		startActivity(browserIntent);
+		UrlUtil.openUrl(getContext(), getString(R.string.faq_button_url));
 	}
 
 	private void callHotline() {
